@@ -31,10 +31,134 @@ const {
     filename: __filename,
     use: "<username>",
   },
+    const { tlang, cmd,fetchJson, sleep, botpic,ffmpeg, getBuffer, pinterest, prefix, Config } = require('../lib')
+const { mediafire } = require("../lib/mediafire.js");
+const googleTTS = require("google-tts-api");
+const ytdl = require('ytdl-secktor')
+const fs = require('fs-extra')
+var videotime = 60000 // 1000 min
+var dlsize = 1000 // 1000mb
+
+    //---------------------------------------------------------------------------
+
+    //---------------------------------------------------------------------------
+cmd({
+            pattern: "tts",
+            desc: "text to speech.",
+            category: "downloader",
+            filename: __filename,
+            use: '<Hii,this is Secktor>',
+        },
+        async(Void, citel, text) => {
+            if (!text) return citel.reply('Please give me Sentence to change into audio.')
+            let texttts = text
+            const ttsurl = googleTTS.getAudioUrl(texttts, {
+                lang: "en",
+                slow: false,
+                host: "https://translate.google.com",
+            });
+            return Void.sendMessage(citel.chat, {
+                audio: {
+                    url: ttsurl,
+                },
+                mimetype: "audio/mpeg",
+                fileName: `ttsCitelVoid.m4a`,
+            }, {
+                quoted: citel,
+            });
+        }
+
+    )
+     //---------------------------------------------------------------------------
+
+    //---------------------------------------------------------------------------
+cmd({
+            pattern: "son",
+            desc: "Sends info about the query(of youtube video/audio).",
+            category: "downloader",
+            filename: __filename,
+            react: "🎶",
+            use: '<faded-Alan walker.>',
+        },
+        async(Void, citel, text) => {
+            if (!text) return citel.reply(`Use ${command} Back in Black`);
+            let yts = require("secktor-pack");
+            let search = await yts(text);
+            let anu = search.videos[0];
+            let buttonMessage = {
+                image: {
+                    url: anu.thumbnail,
+                },
+                caption: `
+╭───────────────◆
+│⿻ ${tlang().title} 
+│  *Youtube Player* ✨
+│⿻ *Title:* ${anu.title}
+│⿻ *Duration:* ${anu.timestamp}
+│⿻ *Viewers:* ${anu.views}
+│⿻ *Uploaded:* ${anu.ago}
+│⿻ *Author:* ${anu.author.name}
+╰────────────────◆
+⦿ *Url* : ${anu.url}
+`,
+                footer: tlang().footer,
+                headerType: 4,
+            };
+            return Void.sendMessage(citel.chat, buttonMessage, {
+                quoted: citel,
+            });
+
+        }
+    )
+    //---------------------------------------------------------------------------
+
+    //---------------------------------------------------------------------------
+cmd({
+            pattern: "pint",
+            desc: "Downloads image from pinterest.",
+            category: "downloader",
+            filename: __filename,
+            use: '<text|image name>',
+        },
+        async(Void, citel, text) => {
+            if (!text) return reply("What picture are you looking for?") && Void.sendMessage(citel.chat, {
+                react: {
+                    text: '❌',
+                    key: citel.key
+                }
+            })
+            try {
+                anu = await pinterest(text)
+                result = anu[Math.floor(Math.random() * anu.length)]
+                let buttonMessage = {
+                    image: {
+                        url: result
+                    },
+                    caption: ` `,
+                    footer: tlang().footer,
+                    headerType: 4,
+                    contextInfo: {
+                        externalAdReply: {
+                            title: `Here it is✨`,
+                            body: `${Config.ownername}`,
+                            thumbnail: log0,
+                            mediaType: 2,
+                            mediaUrl: ``,
+                            sourceUrl: ``
+                        }
+                    }
+                }
+                return Void.sendMessage(citel.chat, buttonMessage, {
+                    quoted: citel
+                })
+            } catch (e) {
+                console.log(e)
+            }
+        })
   async (m, username) => {
     try {
       if (!username) {
-        return await m.send("*_Please provide an Instagram username!_*");
+         return await m.send("*_Please provide an Instagram username!_*");
       }
 
       const apiUrl = `https://api.maher-zubair.tech/stalk/instagram?q=${encodeURIComponent(
