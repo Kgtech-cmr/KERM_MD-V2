@@ -8,13 +8,14 @@ smd(
     pattern: "lyrics",
     desc: "Get the lyrics of a song.",
     category: "search",
+    react: "🎼",
     filename: __filename,
     use: "<song_name>",
   },
   async (m, songName) => {
     try {
       if (!songName) {
-        return await m.send("*_Please provide a song name!_*");
+        return await m.send("*_Please provide a song name bro!_*");
       }
 
       const apiUrl = `https://api.maher-zubair.tech/search/lyrics?q=${encodeURIComponent(
@@ -361,11 +362,12 @@ smd({
             category: "search",
             desc: "Sends info of given query from Google Search.",
             use: '<text>',
+            react: "🔎",
             filename: __filename,
         },
         async(message, text) => {
           try{
-            if (!text) return message.reply(`*_Uhh please, give me a query_*\n*_Example : ${prefix}google RIAS_GREMORY-BOT._*`);
+            if (!text) return message.reply(`*_Uhh please, give me a query_*\n*_Example : ${prefix}google KERM_MD-V2._*`);
             let google = require('google-it');
             google({ 'query': text}).then(res => {
                 let msg= `Google Search From : ${text} \n\n`;
@@ -517,6 +519,7 @@ smd({
             category: "search",
             desc: "Searches Image on Google",
             use: '<text>',
+            react: "🌁",
             filename: __filename,
         },
         async(message, match) => {
@@ -642,8 +645,8 @@ smd({
           try{
             let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
             let random = anu[Math.floor(Math.random() * anu.length)]
-            message.reply(random.male, {caption: `*✦Couple Male profile✦*`}, "image")
-            message.reply(random.female, {caption: `*✦Couple Female profile✦*`}, "image")
+            message.reply(random.male, {caption: `*✦Entk vous allez tous rompre🤧🤣✦*`}, "image")
+            message.reply(random.female, {caption: `*✦Entk vous allez tous rompre🤧🤣✦*`}, "image")
           }catch(e){return await message.error(`${e}\n\n command: couplepp`,e,`*_Uhh dear, Didn't get any results!_*`) }
         }
 
@@ -658,9 +661,9 @@ smd({
         filename: __filename,
     },
     async(message, text) => {
- if(!text) return await message.reply('Give Me Number without + sign. Example: .iswa 234902786xx')
+ if(!text) return await message.reply('Give Me Number without + sign. Example: .iswa 2376565206xx')
         var inputnumber = text.split(" ")[0]
-        if (!inputnumber.includes('x')) return message.reply(`*You did not add x*\nExample: iswa 234902786xx  \n ${Config.caption}`)
+        if (!inputnumber.includes('x')) return message.reply(`*You did not add x*\nExample: iswa 2376565206xx  \n ${Config.caption}`)
         message.reply(`*Searching for WhatsApp account in given range...* \n ${Config.caption}`)
 
         function countInstances(string, word) {  return string.split(word).length - 1; }
