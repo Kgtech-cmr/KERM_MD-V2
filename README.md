@@ -40,7 +40,7 @@
 <a href="https://kerm-session.onrender.com/wasiqr"><img src="https://img.shields.io/badge/QR CODE-green" alt="Click Here to Get QR-Code" width="90"></a> 
 
 ## How To Deploy On Github.
-* [![YOUTUBE](https://img.shields.io/badge/HOW_TO_DEPLOY-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/4LuZuByZNwI?si=ZTUB9awhKPD9iIVo)
+* [![YOUTUBE](https://img.shields.io/badge/HOW_TO_DEPLOY-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/T77rQM7Nk5k?si=gg-LJxS6vC6kBEpJ)
 
 • Create a new file [`.github/workflows/deploye.yml`] After created, copy this code👇🏽and paste it there
 ```yml
