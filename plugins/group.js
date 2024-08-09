@@ -1226,3 +1226,15 @@ const {
      await _0x553d05.error(_0x2a8ad8 + "\n\ncommand: broadcast", _0x2a8ad8);
    }
  });
+Module({
+    pattern: 'clear ?(.*)',
+    fromMe: true,
+    desc: "Clear chat",
+    use: 'misc'
+}, (async (message, match) => {
+    await message.client.chatModify({
+        delete: true,
+        lastMessages: [{ key: message.data.key, messageTimestamp:message.data.messageTimestamp }]
+      },message.jid)
+    return  await message.send("_Chat cleared bro!_")  
+}));
