@@ -485,13 +485,14 @@ smd({
   alias: ["git", "sc", "script", "kerm"],
   desc: "Sends info about repo",
   category: "general",
+  react: "🤖",
   filename: __filename
 }, async _0x45da98 => {
   try {
     let {
       data: _0x44f98c
     } = await axios.get("https://api.github.com/repos/Kgtech-cmr/KERM_MD-V2");
-    let _0x1c73f9 = ("\nᵏᵍ┘𝐊𝐄𝐑𝐌_𝐌𝐃-𝐕𝟐└ 𝘈 𝘚𝘐𝘔𝘗𝘓𝘌 𝘞𝘏𝘈𝘛𝘚𝘈𝘗𝘗 𝘉𝘖𝘛 , 𝘔𝘈𝘋𝘌 𝘉𝘠 ☞⌜ KG TECH⌝☜ 𝘈𝘕𝘋 𝘋𝘌𝘗𝘓𝘖𝘠𝘌𝘋 𝘉𝘠 *" + Config.ownername + "*.\n\n  *❲❒❳ Stars:* " + (_0x44f98c?.stargazers_count || "120+") + " stars\n  *❲❒❳ Forks:* " + (_0x44f98c?.forks_count || "1000+") + " forks\n  *❲❒❳ Authors:* ☞⌜ KG TECH⌝☜\n  *❲❒❳ Created On:* " + (_0x44f98c?.created_at || "undefined") + "\n  *❲❒❳ Repo:* _https://github.com/Kermhack/KERM_MD-v2\n  *❲❒❳ Scan:* _" + scan + "_" + (Config.caption ? "\n\n" + Config.caption : "")).trim();
+    let _0x1c73f9 = ("\nᵏᵍ┘𝐊𝐄𝐑𝐌_𝐌𝐃-𝐕𝟐└ 𝘈 𝘚𝘐𝘔𝘗𝘓𝘌 𝘞𝘏𝘈𝘛𝘚𝘈𝘗𝘗 𝘉𝘖𝘛 , 𝘔𝘈𝘋𝘌 𝘉𝘠 ☞⌜ KG TECH⌝☜ 𝘈𝘕𝘋 𝘋𝘌𝘗𝘓𝘖𝘠𝘌𝘋 𝘉𝘠 *" + Config.ownername + "*.\n\n  *❲❒❳ Stars:* " + (_0x44f98c?.stargazers_count || "120+") + " stars\n  *❲❒❳ Forks:* " + (_0x44f98c?.forks_count || "1000+") + " forks\n  *❲❒❳ Authors:* ☞⌜ KG TECH⌝☜\n  *❲❒❳ Created On:* " + (_0x44f98c?.created_at || "undefined") + "\n  *❲❒❳ Repo:* _https://github.com/Kgtech-cmr/KERM_MD-V2\n  *❲❒❳ Scan:* _" + scan + "_" + (Config.caption ? "\n\n" + Config.caption : "")).trim();
     return await _0x45da98.sendUi(_0x45da98.jid, {
       caption: _0x1c73f9
     });
