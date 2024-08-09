@@ -17,7 +17,7 @@ smd(
         return await m.send("*_Please provide a song name!_*");
       }
 
-      const apiUrl = `https://api.maher-zubair.tech/search/lyrics?q=${encodeURIComponent(
+      const apiUrl = `https://www.lyrics.com/lyrics_api.php?q=${encodeURIComponent(
         songName
       )}`;
       const response = await fetch(apiUrl);
@@ -155,7 +155,7 @@ async(message, match) => {
  try{
 
    message.react("🔍")
-         if (!match) return message.reply(`Give me a user name like ${prefix}github Astropeda`)
+         if (!match) return message.reply(`Give me a user name like ${prefix}github KERM_MD-V2`)
 
          const { data } = await axios(`https://api.github.com/users/${match}`)
    if(!data) return await message.send(`*_Didn't get any results, Provide valid user name!_*`)
@@ -365,7 +365,7 @@ smd({
         },
         async(message, text) => {
           try{
-            if (!text) return message.reply(`*_Uhh please, give me a query_*\n*_Example : ${prefix}google RIAS_GREMORY-BOT._*`);
+            if (!text) return message.reply(`*_Uhh please, give me a query_*\n*_Example : ${prefix}google KERM_MD-V2._*`);
             let google = require('google-it');
             google({ 'query': text}).then(res => {
                 let msg= `Google Search From : ${text} \n\n`;
@@ -517,12 +517,13 @@ smd({
             category: "search",
             desc: "Searches Image on Google",
             use: '<text>',
+            react: "📸",
             filename: __filename,
         },
         async(message, match) => {
 try{
   let text = match ? match : message.reply_text;
-   if (!text) return message.reply(`Provide me a query!\n*Ex : .image luffy |10*`)
+   if (!text) return message.reply(`Provide me a query!\n*Ex : .image Kerm |10*`)
    
    let name1 = text.split("|")[0] || text
    let name2 = text.split("|")[1] || 5
