@@ -277,6 +277,7 @@ cmd({
             category: "search",
             desc: "Gives horoscope info of user.",
             use: '<sign>\n:Example: horo libra',
+            react: "🔮",
             filename: __filename,
         },
         async(Void, citel, text) => {
