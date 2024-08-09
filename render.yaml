@@ -1,0 +1,44 @@
+services:
+  - type: web
+    runtime: docker
+    name: kerm_md-v2
+    repo: https://github.com/Kermhack/KERM_MD-v2
+    rootDir: webdis
+    branch: main
+    env: docker
+    dockerfilePath: Dockerfile
+    startCommand: npm install
+    buildCommand: bundle install
+    plan: free
+    autoDeploy: false
+    envVars:
+      - key: RENDER_NAME
+        sync: false
+        required: true
+      - key: RENDER_API
+        sync: false
+        required: true
+      - key: SESSION_ID
+        sync: false
+        required: true
+      - key: DATABASE_URL
+        sync: false
+        required: true
+      - key: PREFIX
+        sync: false
+      - key: SUDO
+        sync: false
+      - key: MODE
+        value: "private"
+      - key: LOG_MSG
+        value: "false"
+      - key: AUTO_STATUS_VIEW
+        value: "true"
+      - key: READ_MSG
+        value: "false"
+      - key: ALWAYS_ONLINE
+        value: "true"
+      - key: START_MSG
+        value: "true"
+      - key: PORT
+        value: "3000"
