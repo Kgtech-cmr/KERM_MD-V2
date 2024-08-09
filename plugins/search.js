@@ -17,7 +17,7 @@ smd(
         return await m.send("*_Please provide a song name!_*");
       }
 
-      const apiUrl = `https://www.lyrics.com/lyrics_api.php?q=${encodeURIComponent(
+     let result = await getJson(`https://raganork.tk/api/lyrics?query=${encodeURIComponent(match[1])}`)
         songName
       )}`;
       const response = await fetch(apiUrl);
