@@ -18,7 +18,7 @@ smd(
         return await m.send("*_Please provide a song name bro!_*");
       }
 
-      const apiUrl = `https://genius-song-lyrics1.p.rapidapi.com/song/recommendations/?id=2396871=${encodeURIComponent(
+      const apiUrl = `youtube-mp3-downloader2.p.rapidapi.com${encodeURIComponent(
         songName
       )}`;
       const response = await fetch(apiUrl);
