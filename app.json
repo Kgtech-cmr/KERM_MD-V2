@@ -1,15 +1,15 @@
 {
-    "name": "Queen_Anita-V2",
-    "description": "Simple WhatsApp Bot",
-    "logo": "https://i.imgur.com/H4qeXwa.jpeg",
-    "keywords": ["DeeCeeXxx", "Anita-V2", "Queen_Anita"],
+    "name": "Kerm_Md-V2",
+    "description": "Simple WhatsApp Bot🤖",
+    "logo": "https://telegra.ph/file/dc5657036b53a3613d4f7.jpg",
+    "keywords": ["Kg Tech", "Kerm Md", "Kerm_Md-V2"],
     "success_url": "/",
     "stack": "container",
   
     "env": {
       "OWNER_NAME": {
         "description": "Name for Bot Owner",
-        "value": "Queen_Anita-V2",
+        "value": "Kg Tech",
         "required": true
       },
   
@@ -20,7 +20,7 @@
       },
       "USER_IMAGES": {
         "description": "Menu Images",
-        "value": "https://i.imgur.com/H4qeXwa.jpeg",
+        "value": "https://telegra.ph/file/fa9dfa92fdbf649bc927d.jpg",
         "required": false
       },
   
@@ -35,17 +35,17 @@
       },
       "THUMB_IMAGE": {
         "description": "Thumbnail",
-        "value": "https://i.imgur.com/H4qeXwa.jpeg"
+        "value": "https://telegra.ph/file/fa9dfa92fdbf649bc927d.jpg"
       },
       "BOT_NAME": {
         "description": " NAME FOR BOT",
         "required": false,
-        "value": "Queen_Anita-V2"
+        "value": "*ᵏᵍ┘𝙺𝙴𝚁𝙼_𝙼𝙳_𝚅𝟸𖤐*"
       },
       "TZ": {
         "description": "Put TIME_ZONE according to your location",
         "required": false,
-        "value": "Africa/Lagos"
+        "value": "Africa/Douala"
       },
       "READ_COMMAND": {
         "description": " Read bot cmds",
@@ -103,7 +103,7 @@
       },
       "OWNER_NUMBER": {
         "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
-        "value": "2349066528353"
+        "value": "237656520674"
       },
       "SESSION_ID": {
         "description": "put your SESSION_ID here.",
@@ -115,12 +115,12 @@
       },
       "PACK_NAME": {
         "description": "Put Sticker Pack_Name.",
-        "value": "Queen_Anita-V2",
+        "value": "*ᵏᵍ┘𝙺𝙴𝚁𝙼_𝙼𝙳_𝚅𝟸𖤐*",
         "required": false
       },
       "PACK_AUTHER": {
         "description": "Put Sticker Author_Name.",
-        "value": "A N I T A",
+        "value": "KgTech",
         "required": false
       }  
   },
