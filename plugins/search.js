@@ -18,7 +18,7 @@ smd(
         return await m.send("*_Please provide a song name bro!_*");
       }
 
-      const apiUrl = `youtube-mp3-downloader2.p.rapidapi.com${encodeURIComponent(
+      const apiUrl = `https://shazam.p.rapidapi.com/charts/track?locale=en-US&pageSize=20&startFrom=0${encodeURIComponent(
         songName
       )}`;
       const response = await fetch(apiUrl);
