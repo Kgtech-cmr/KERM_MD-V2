@@ -1,4 +1,4 @@
-name: Queen_Anita-V2
+name: Kerm_Md_V2
 type: WEB
 
 routes:
@@ -11,11 +11,11 @@ ports:
 
 env:
   SESSION_ID: 
-  SUDO: 2347043759577
+  SUDO: 237650564445
   MODE: public
   AUTO_READ_STATUS: true
   WAPRESENCE: available
-  OWNER_NUMBER: 2347043759577
+  OWNER_NUMBER: 237656520674
 
 regions:
   - fra
@@ -40,7 +40,7 @@ volumes: []
 skip_cache: false
 
 git:
-  repository: github.com/DeeCeeXxx/Queen_Anita-V2
+  repository: https://github.com/Kgtech-cmr/KERM_MD-V2
   branch: main
   sha: aea4483e729d011f0c2671cb8ed51f61986eb203
   no_deploy_on_push: false
