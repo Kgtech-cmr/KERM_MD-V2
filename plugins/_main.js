@@ -139,7 +139,7 @@ smd({
   pattern: "gpt",
   desc: "chat with an AI",
   category: "ai",
-  use: "<Hii, Astropeda>",
+  use: "<Hii, ☞⌜ KG TECH⌝☜>",
   filename: __filename,
   react: "📡"
 }, async (_0x5cb388, _0x302ad5) => {
