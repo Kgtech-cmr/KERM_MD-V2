@@ -1,4 +1,4 @@
-//#ENJOY
+//#ENJOY BRO😍
 const fs = require("fs-extra");
 if (fs.existsSync(".env"))
   require("dotenv").config({ path: __dirname + "/.env" });
@@ -38,7 +38,7 @@ global.save_status_from = process.env.SAVE_STATUS_FROM || "";
 global.read_status_from = process.env.READ_STATUS_FROM || "";
 
 global.api_smd = "https://api-smd-1.vercel.app";
-global.scan = "https://kerm-session-39mi.onrender.com";
+global.scan = "https://kerm-session-39mi.onrender.com/wasiqr";
 
 global.SESSION_ID =
   process.env.SESSION_ID ||
