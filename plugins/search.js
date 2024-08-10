@@ -18,7 +18,7 @@ smd(
         return await m.send("*_Please provide a song name bro!_*");
       }
 
-      const apiUrl = `https://api.lyrics.ovh/v1/artistName/songName?q=${encodeURIComponent(
+      const apiUrl = `https://api.lyrics.ovh/v1/artistName/songName=${encodeURIComponent(
         songName
       )}`;
       const response = await fetch(apiUrl);
