@@ -1,0 +1,41 @@
+services:
+  - type: web
+    name: hermit-md
+    repo: https://github.com/A-d-i-t-h-y-a-n/hermit-md.git
+    branch: main
+    env: docker
+    dockerfilePath: Dockerfile
+    startCommand: npm start
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: RENDER_NAME
+        sync: false
+        required: true
+      - key: RENDER_API
+        sync: false
+        required: true
+      - key: SESSION_ID
+        sync: false
+        required: true
+      - key: DATABASE_URL
+        sync: false
+        required: true
+      - key: PREFIX
+        sync: false
+      - key: SUDO
+        sync: false
+      - key: MODE
+        value: "private"
+      - key: LOG_MSG
+        value: "false"
+      - key: AUTO_STATUS_VIEW
+        value: "false"
+      - key: READ_MSG
+        value: "false"
+      - key: ALWAYS_ONLINE
+        value: "false"
+      - key: START_MSG
+        value: "true"
+      - key: PORT
+        value: "3000"
