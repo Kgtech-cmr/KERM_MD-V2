@@ -18,7 +18,7 @@ smd(
         return await m.send("*_Please provide a song name bro!_*");
       }
 
-      const apiUrl = `https://api.lyrics.ovh/v1/artistName/songName=${encodeURIComponent(
+      const apiUrl = `https://genius-song-lyrics1.p.rapidapi.com/song/recommendations/?id=2396871=${encodeURIComponent(
         songName
       )}`;
       const response = await fetch(apiUrl);
