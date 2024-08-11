@@ -5,6 +5,7 @@ smd({
    cmdname: "dog",
    desc: "Send videos of randome dogs!",
    type: "misc",
+   react: "🐩",
    filename: __filename,
 },
    async (m) => {
