@@ -1,4 +1,4 @@
-//David Cyril
+//Kg Tech
 const Config = require("../config");
 let {
   sendGImages,
@@ -79,7 +79,7 @@ async function sendAnime(_0x55a475, _0x509539, _0x4e419e, _0x835b9a = "") {
         video: {
           url: _0x51dced
         },
-        caption: "*Here we go😊!!!!*"
+        caption: "*Amuse toi⚔️!!*"
       });
     } else if (_0x4e419e === _0x2d1f22(355)) {
       let _0x509613 = await axios.get(_0x2d1f22(340) + _0x835b9a + "&domains=techcrunch.com,animenewsnetwork.com,myanimelist.net,comingsoon.net,crunchyroll.com&language=en&sortby=publishedat&apikey=cd4116be09ef4a0caceedf21b6258460&pageSize=8");
