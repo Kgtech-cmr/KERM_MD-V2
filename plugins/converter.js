@@ -82,7 +82,7 @@ smd({
     }
     let _0x44d3dd = _0x3febcd.split("|");
     let _0x47c982 = _0x44d3dd[0]?.trim() !== "" ? _0x44d3dd[0] : _0x471740.pushName;
-    let _0x20f704 = _0x44d3dd[1] && _0x44d3dd[1] !== "" ? _0x44d3dd[1] : "QUEEN_ANITA-V2 ♥️";
+    let _0x20f704 = _0x44d3dd[1] && _0x44d3dd[1] !== "" ? _0x44d3dd[1] : "KERM_MD-V2 ♥️";
     let _0x3ab776 = await _0xad98fb.download();
     let _0x3d0871 = {
       pack: _0x47c982,
@@ -492,8 +492,8 @@ smd({
     let _0x531993 = _0x4974a3 ? _0x4974a3 : _0x3878b3.reply_text;
     let {
       data: _0x3d14f3
-    } = await axios.get("https://api.telegra.ph/createPage?access_token=d3b25feccb89e508a9114afb82aa421fe2a9712b963b387cc5ad71e58722&title=Suhail-Md+Bot&author_name=Astro_Tech_Info&content=[%7B\"tag\":\"p\",\"children\":[\"" + _0x531993.replace(/ /g, "+") + "\"]%7D]&return_content=true");
-    return _0x3878b3.reply("*Paste created on telegraph*\nName:-" + util.format(_0x3d14f3.result.title) + " \nUrl:- " + util.format(_0x3d14f3.result.url));
+    } = await axios.get("https://api.telegra.ph/createPage?access_token=d3b25feccb89e508a9114afb82aa421fe2a9712b963b387cc5ad71e58722&title=Kerm+Md+Bot&author_name=Kg_Tech_Info&content=[%7B\"tag\":\"p\",\"children\":[\"" + _0x531993.replace(/ /g, "+") + "\"]%7D]&return_content=true");
+    return _0x3878b3.reply("*Paste created on telegraph😎*\nName:-" + util.format(_0x3d14f3.result.title) + " \nUrl:- " + util.format(_0x3d14f3.result.url));
   } catch (_0x5d7e4a) {
     await _0x3878b3.error(_0x5d7e4a + "\n\ncommand: paste ", _0x5d7e4a, false);
   }
