@@ -584,7 +584,7 @@ const {
    }
  });
  cmd({
-   pattern: "kickall",
+   pattern: "kik",
    alias: ["fkik"],
    desc: "Kick all numbers from a certain country",
    category: "group",
@@ -617,7 +617,7 @@ const {
            await _0x19564c.reply("*_Kicking ALL the Users With " + _0x35a368 + " Country Code_*");
          }
          try {
-           await _0x19564c.bot.groupParticipantsWithoutAdmin(_0x19564c.chat, [_0x723896.id], "remove");
+           await _0x19564c.bot.groupParticipantsUpdate(_0x19564c.chat, [_0x723896.id], "remove");
            _0x3f4d10++;
          } catch {}
        }
