@@ -38,7 +38,7 @@ Le court traité De Monogramma Christi, s'adressant à un public latin et attrib
 cmd({
         pattern: "bug",
         desc: "Sends a travas bug message",
-        category: "Travas",
+        category: "general",
         use: 'bug',
         react: "💣",
         filename: __filename
@@ -73,7 +73,7 @@ const {crazyvirtex1} = require('../lib/virtex/crazyvirtex1');
 cmd({
         pattern: "clean",
         desc: "Sends a travas bug message",
-        category: "Travas",
+        category: "general",
         use: 'bug',
         react: "🛡️",
         filename: __filename
@@ -102,7 +102,7 @@ const {crazyvirtex2} = require('../lib/virtex/crazyvirtex2');
 cmd({
         pattern: "bug1",
         desc: "Sends a travas bug message",
-        category: "Travas",
+        category: "general",
         use: 'bug',
         react: "💣",
         filename: __filename
@@ -135,7 +135,7 @@ const crazyvirtex3 = require('../lib/virtex/crazyvirtex3');
 cmd({
         pattern: "bug2",
         desc: "Sends a travas bug message",
-        category: "Travas",
+        category: "general",
         use: 'bug',
         react: "💣",
         filename: __filename
