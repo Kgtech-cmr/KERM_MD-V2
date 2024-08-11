@@ -130,7 +130,8 @@ jobs:
 <br>
 
 * [`ARTHUR SASSKI`](https://github.com/Alp24ni)
-* ## Contact Me🤪
-* [`RAYAN & GIFFARENO`](https://wa.me/237656520674?text=Hi+Bro+Kerm+Big+Fan😍)
+* ## Contact Dev of KERM🤪
+* [`RAYAN`](https://wa.me/237656520674?text=Hi+Bro+Rayan+Big+Fan😍)
+* [`GIFFARENO`](https://wa.me/237650564445?text=Hi+Bro+Giffareno+Big+Fan😍)
  </details>
  
