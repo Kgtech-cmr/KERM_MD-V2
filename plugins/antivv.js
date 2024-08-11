@@ -46,7 +46,7 @@ smd(
             id: "bot_" + _0x5c3dd1.user,
           },
           {
-            antiviewonce: "false",
+            antiviewonce: "true",
           }
         );
         return await _0x5c3dd1.reply("*AntiViewOnce Succesfully deactivated man*");
