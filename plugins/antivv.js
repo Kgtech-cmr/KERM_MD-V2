@@ -21,7 +21,7 @@ smd(
         }));
       let _0x446f76 = _0x543e4e.toLowerCase().split(" ")[0].trim();
       if (_0x446f76 === "on" || _0x446f76 === "enable" || _0x446f76 === "act") {
-        if (bgmm.antiviewonce === "true") {
+        if (bgmm.antiviewonce === "false") {
           return await _0x5c3dd1.reply("*AntiViewOnce already enabled!*");
         }
         await bot_.updateOne(
@@ -39,7 +39,7 @@ smd(
         _0x446f76 === "deact"
       ) {
         if (bgmm.antiviewonce === "false") {
-          return await _0x5c3dd1.reply("*AntiViewOnce already disabled*");
+          return await _0x5c3dd1.reply("*AntiViewOnce already disabled man*");
         }
         await bot_.updateOne(
           {
@@ -49,7 +49,7 @@ smd(
             antiviewonce: "false",
           }
         );
-        return await _0x5c3dd1.reply("*AntiViewOnce Succesfully deactivated*");
+        return await _0x5c3dd1.reply("*AntiViewOnce Succesfully deactivated man*");
       } else {
         return await _0x5c3dd1.send(
           "*_Use on/off to enable/disable antiViewOnce!_*"
