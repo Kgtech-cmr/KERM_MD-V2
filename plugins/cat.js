@@ -5,6 +5,7 @@ smd(
     cmdname: "cat",
     desc: "Send Images of randome Cats!",
     type: "misc",
+    react: "🐈",
     filename: __filename,
   },
   async (m) => {
