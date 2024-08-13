@@ -995,6 +995,7 @@ smd(
    alias: ["modapk"],
    desc: "Downloads apks  .",
    category: "downloader",
+   react: "🛜",
    filename: __filename,
    use: "<add sticker url.>"
  }, async (_0x7b09ff, _0x4af114) => {
@@ -1198,12 +1199,12 @@ smd(
    desc: "text to speech.",
    category: "downloader",
    filename: __filename,
-   use: "<Hii,this is Asta>"
+   use: "<Hii,this is Kerm>"
  }, async (_0x55aba2, _0x56da6b) => {
    try {
      let _0x204f81 = _0x55aba2.reply_text ? _0x55aba2.reply_text : _0x56da6b;
      if (!_0x204f81) {
-       return _0x55aba2.reply("*_Example : .tts Hi,I am WASI-Md whatsapp bot._*");
+       return _0x55aba2.reply("*_Example : .tts Hi,I am KERM-MD whatsapp bot._*");
      }
      try {
        let _0x1974d5 = _0x56da6b ? _0x56da6b.split(" ")[0].toLowerCase() : "en";
