@@ -94,7 +94,7 @@ smd(
         return await _0xd700b1.send(
           "*_provide text to update profile status!_*\n*_Example: " +
             prefix +
-            "bio Asta Md_*"
+            "bio Kerm Md_*"
         );
       }
       await _0xd700b1.bot.updateProfileStatus(_0xb45f41);
@@ -393,7 +393,7 @@ cmd(
         return _0xcffaeb.reply(
           "Please Give Me User Name, \n *Example : " +
             prefix +
-            "vcard Asta Tech Info* "
+            "vcard Kg Tech Info* "
         );
       }
       var _0x423556 = _0x4158fc.split(" ");
@@ -506,12 +506,12 @@ smd(
         return await _0x1ed3b3.reply("*Uhh dear, reply/mention an User*");
       }
       if (_0x1ed3b3.checkBot(_0x3489cf)) {
-        return await _0x1ed3b3.reply("*Huh, I can't block my Creator!!*");
+        return await _0x1ed3b3.reply("*Huh, I can't block my Creator Kg Tech idiot😑!!*");
       }
       await _0x1ed3b3.bot
         .updateBlockStatus(_0x3489cf, "block")
         .then((_0x112d4d) => {
-          _0x1ed3b3.react("✨", _0x1ed3b3);
+          _0x1ed3b3.react("🔒", _0x1ed3b3);
         })
         .catch((_0x4deb64) => _0x1ed3b3.reply("*_Can't block user, Sorry!!_*"));
     } catch (_0x337f7a) {
@@ -564,7 +564,7 @@ cmd(
     desc: "download viewOnce Message.",
     category: "whatsapp",
     use: "<query>",
-    react: "🫦",
+    react: "💾",
     filename: __filename,
   },
   async (_0x5e331d, _0x237d8a) => {
