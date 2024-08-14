@@ -735,4 +735,110 @@ smd({
   filename: __filename
 }, async (_0x1a01af, _0x1ac85a) => {
   await aitts(_0x1a01af, _0x1ac85a || _0x1a01af.reply_text);
+ });
+smd(
+  {
+    pattern: "dev",
+    desc: "Shows the developper of the bot.",
+    category: "developper",
+    filename: __filename,
+    use: "dev",
+  },
+  async (message, input) => {
+    try {
+      const start = new Date().getTime();
+      const designs = [
+        async () => {
+          const imageBuffer = await axios.get(
+            "https://telegra.ph/file/0b9ac8d3356e7db641a63.jpg",
+            {
+              responseType: "arraybuffer",
+            }
+          );
+
+          const quoteResponse = await axios.get(
+            "*🪪GIFFAREO*\n\n*🪪RAYAN*"
+          );
+          const quote = quoteResponse.data;
+          if (!quote || quote.status !== 200) {
+            return await message.reply("*Failed to get developper name.*");
+          }
+
+          const end = new Date().getTime();
+          const pingSeconds = (end - start) / 1000;
+          const captionText = `*👨🏾‍💻Moderator👨🏾‍💻*\n\n*ʀᴇsᴘᴏɴsᴇ ʀᴀᴛᴇ:* ${pingSeconds} seconds\n\nThanks for using KERM_MD-V2🔥`;
+
+          return { image: imageBuffer.data, caption: captionText };
+        },
+        async () => {
+          const imageBuffer = await axios.get(
+            "https://telegra.ph/file/0b9ac8d3356e7db641a63.jpg",
+            {
+              responseType: "arraybuffer",
+            }
+          );
+
+          const factResponse = await axios.get(
+            "*🪪GIFFAREO*\n\n*🪪RAYAN*"
+          );
+          const fact = factResponse.data;
+          if (!fact || fact.status !== 200) {
+            return await message.reply("*Failed to send developper name.*");
+          }
+
+          const end = new Date().getTime();
+          const pingSeconds = (end - start) / 1000;
+          const captionText = `*👨🏾‍💻Moderator👨🏾‍💻*\n\n*ʀᴇsᴘᴏɴsᴇ ʀᴀᴛᴇ:* ${pingSeconds} seconds\n\nThanks for using KERM_MD-V2🔥`;
+
+          return { image: imageBuffer.data, caption: captionText };
+        },
+        async () => {
+          const imageBuffer = await axios.get(
+            "https://telegra.ph/file/0b9ac8d3356e7db641a63.jpg",
+            {
+              responseType: "arraybuffer",
+            }
+          );
+
+          const lineResponse = await axios.get(
+            "*🪪GIFFAREO*\n\n*🪪RAYAN*"
+          );
+          const line = lineResponse.data;
+          if (!line || line.status !== 200) {
+            return await message.reply("*Failed to send developper name.*");
+          }
+
+          const end = new Date().getTime();
+          const pingSeconds = (end - start) / 1000;
+          const captionText = `*👨🏾‍💻Moderator👨🏾‍💻*\n\n*ʀᴇsᴘᴏɴsᴇ ʀᴀᴛᴇ:* ${pingSeconds} seconds\n\nThanks for using KERM_MD-V2🔥`;
+
+          return { image: imageBuffer.data, caption: captionText };
+        },
+      ];
+
+      const randomDesign = designs[Math.floor(Math.random() * designs.length)];
+      const messageData = await randomDesign();
+
+      const message_options = {
+        quoted: message,
+        contextInfo: {
+          forwardingScore: 999,
+          isForwarded: true,
+        },
+      };
+
+      return await message.bot.sendMessage(
+        message.chat,
+        messageData,
+        message_options
+      );
+    } catch (error) {
+      await message.error(
+        error + "\n\nCommand: dev",
+        error,
+        "*Failed to send devlopper name.*"
+      );
+    }
+  }
+)
 });
