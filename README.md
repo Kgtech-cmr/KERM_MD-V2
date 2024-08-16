@@ -129,7 +129,8 @@ jobs:
 
 <br>
 
-* [`TOGE SASSKI`](https://github.com/toge012345)
+* [`TOGE SASAKI`](https://github.com/toge012345)
+* [ˋARTHUR SASAKI`](https://github.com/Alp24ni)
 * ## Contact Dev of KERM🤪
 * [`RAYAN`](https://wa.me/237656520674?text=Hi+Bro+Rayan+Big+Fan😍)
 * [`GIFFARENO`](https://wa.me/237650564445?text=Hi+Bro+Giffareno+Big+Fan😍)
