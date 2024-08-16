@@ -36,16 +36,16 @@ smd(
 ➮Nᴜᴍ - ${owner.split(",")[0]} 
 ➮Mᴇᴍᴏ - ${formatp(os.totalmem() - os.freemem())} 
       \n *KERM_MD-V2 SIMPLE WHATSAPP BOT*\n\n ${readmore} 
-╭──❰ *ALL MENU* ❱ 
-│🎗 Lɪꜱᴛ 
-│🎗 Cᴀᴛᴇɢᴏʀʏ 
-│🎗 Hᴇʟᴘ 
-│🎗 Aʟɪᴠᴇ 
-│🎗 Uᴘᴛɪᴍᴇ 
-│🎗 Wᴇᴀᴛʜᴇʀ 
-│🎗 Lɪɴᴋ 
-│🎗 Cᴘᴜ 
-│🎗 Rᴇᴘᴏꜱɪᴛᴏʀʏ 
+╭──❰༆𝐀𝐥𝐥 𝐌𝐞𝐧𝐮༆❱ 
+│🤖 Lɪꜱᴛ 
+│🤖 Cᴀᴛᴇɢᴏʀʏ 
+│🤖 Hᴇʟᴘ 
+│🤖 Aʟɪᴠᴇ 
+│🤖 Uᴘᴛɪᴍᴇ 
+│🤖 Wᴇᴀᴛʜᴇʀ 
+│🤖 Lɪɴᴋ 
+│🤖 Cᴘᴜ 
+│🤖 Rᴇᴘᴏꜱɪᴛᴏʀʏ 
 ╰─────────────⦁`.trim();
       return await message.bot.sendUi(message.from, { caption: menuMessage });
     } catch (error) {
