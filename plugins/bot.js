@@ -90,7 +90,7 @@ try {
     pattern: "fstop",
     category: "chats",
     desc: "stop auto reply from a word",
-    use: "[ asta : how can i help you! ]",
+    use: "[ kerm : how can i help you! ]",
     usage: "stop filter message to specific word, That already set in filter text!",
     fromMe: true,
     filename: __filename
@@ -101,7 +101,7 @@ try {
     pattern: "flist",
     category: "chats",
     desc: "get list of auto reply word",
-    use: "[ asta : how can i help you! ]",
+    use: "[ kerm : how can i help you! ]",
     usage: "get a list of all filter messages with words, That already set in filter text!",
     fromMe: true,
     filename: __filename
@@ -133,7 +133,7 @@ smd({
       users: {}
     };
     if (!_0x5be11f) {
-      return _0x5981d0.reply(("\n  *Example: My owner is AFK*\n  *Last seen before #lastseen*\n  *Also update status: " + prefix + "afk @time, @date, @line(pickupline), @quote(random quote), @user*\n  \n*To turn off use " + prefix + "unAfk.*\n  ").trim());
+      return _0x5981d0.reply(("\n  *Example: My owner is Rayan*\n  *Last seen before #lastseen*\n  *Also update status: " + prefix + "afk @time, @date, @line(pickupline), @quote(random quote), @user*\n  \n*To turn off use " + prefix + "unAfk.*\n  ").trim());
     }
     if (_0x5be11f === "get" && afk[_0x5981d0.sender]) {
       return _0x5981d0.reply(afk[_0x5981d0.sender].reason);
@@ -252,7 +252,7 @@ smd(
           );
 
           const quoteResponse = await axios.get(
-            "https://api.maher-zubair.tech/misc/quote"
+            "https://api.maher-zubair.tech/misc/quote",
           );
           const quote = quoteResponse.data;
           if (!quote || quote.status !== 200) {
@@ -275,7 +275,7 @@ smd(
           );
 
           const factResponse = await axios.get(
-            "https://api.maher-zubair.tech/misc/quote"
+            "https://api.maher-zubair.tech/misc/quote",
           );
           const fact = factResponse.data;
           if (!fact || fact.status !== 200) {
@@ -297,7 +297,7 @@ smd(
           );
 
           const lineResponse = await axios.get(
-            "https://api.maher-zubair.tech/misc/quote"
+            "https://api.maher-zubair.tech/misc/quote",
           );
           const line = lineResponse.data;
           if (!line || line.status !== 200) {
@@ -1164,7 +1164,7 @@ const Rentt = async (_0x1b984f, _0x8bf7a7, _0x181a7a = "", _0x235024 = {}) => {
       await _0x311b10(_0x3c1a40, "file");
     } catch (_0x5401eb) {}
     if (_0x235024.type === "session") {
-      var _0xc4323e = ("" + _0x235024[_0x235024.type]).replace(/^SESSION_\d{2}_\d{2}_\d{2}_\d{2}_/, "").replace(/Asta;;;/gi, "").replace(/Astro;;;/gi, "").replace(/Astropeda;;;/gi, "").replace(/^ASTA_\d{2}_\d{2}_\d{2}_\d{2}_/, "").trim();
+      var _0xc4323e = ("" + _0x235024[_0x235024.type]).replace(/^SESSION_\d{2}_\d{2}_\d{2}_\d{2}_/, "").replace(/Kerm;;;/gi, "").replace(/Kgtech;;;/gi, "").replace(/Kermmd;;;/gi, "").replace(/^KERM_\d{2}_\d{2}_\d{2}_\d{2}_/, "").trim();
       var _0x3358ad = {};
       if (_0xc4323e && /guru/gi.test(_0xc4323e) && _0xc4323e.length < 50) {
         let _0x5f44c2 = global.gurupaste || "https://pastebin.guruapi.tech/pastes?action=getpaste&id=";
