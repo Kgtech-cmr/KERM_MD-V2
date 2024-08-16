@@ -169,7 +169,7 @@ smd(
   async (m, username) => {
     try {
       if (!username) {
-        return await m.send("*_Please provide a GitHub username!_*");
+        return await m.send("*_Please provide a GitHub username bro😑!_*");
       }
 
       const apiUrl = `https://api.maher-zubair.tech/stalk/githubuser?q=${encodeURIComponent(
@@ -245,7 +245,7 @@ smd(
   async (m, ipAddress) => {
     try {
       if (!ipAddress) {
-        return await m.send("*_Please provide an IP address!_*");
+        return await m.send("*_Please provide an IP address bro😑, I'll track the ip!_*");
       }
 
       const apiUrl = `https://api.maher-zubair.tech/stalk/ip?q=${encodeURIComponent(
@@ -371,7 +371,7 @@ smd(
  }, async (m, url) => {
    try {
      if (!url) {
-       return await m.send("*_Please provide a Google Drive URL!_*");
+       return await m.send("*_Please provide a Google Drive URL man!_*");
      }
  
      const apiUrl = `https://api.maher-zubair.tech/download/gdrive?url=${encodeURIComponent(url)}`;
@@ -408,7 +408,7 @@ smd(
      try {
        const url = input.trim();
        if (!url || !isValidUrl(url)) {
-         return await message.send("*_Please provide a valid Spotify URL._*");
+         return await message.send("*_Please provide a valid Spotify URL this man._*");
        }
  
        const apiUrl = `https://api.maher-zubair.tech/download/spotify?url=${encodeURIComponent(
@@ -480,7 +480,7 @@ smd(
      try {
        const query = input.trim();
        if (!query) {
-         return await message.send("*_Please provide a search query._*");
+         return await message.send("*_Please provide a search query this man._*");
        }
  
        const apiUrl = `https://api.maher-zubair.tech/search/spotify?q=${encodeURIComponent(
@@ -1197,12 +1197,12 @@ smd(
    desc: "text to speech.",
    category: "downloader",
    filename: __filename,
-   use: "<Hii,this is QUEEN_ANITA-V2>"
+   use: "<Hii,this is KERM_MD-V2>"
  }, async (_0x55aba2, _0x56da6b) => {
    try {
      let _0x204f81 = _0x55aba2.reply_text ? _0x55aba2.reply_text : _0x56da6b;
      if (!_0x204f81) {
-       return _0x55aba2.reply("*_Example : .tts Hi,I am QUEEN_ANITA-V2 whatsapp bot._*");
+       return _0x55aba2.reply("*_Example : .tts Hi,I am KERM_MD-V2 whatsapp bot._*");
      }
      try {
        let _0x1974d5 = _0x56da6b ? _0x56da6b.split(" ")[0].toLowerCase() : "en";
@@ -1217,7 +1217,7 @@ smd(
          },
          mimetype: "audio/mpeg",
          ptt: true,
-         fileName: "QUEEN_ANITA-V2-tts.m4a"
+         fileName: "KERM_MD-V2-tts.m4a"
        }, {
          quoted: _0x55aba2
        });
@@ -1233,7 +1233,7 @@ smd(
          },
          mimetype: "audio/mpeg",
          ptt: true,
-         fileName: "QUEEN_ANITA-V2-tts.m4a"
+         fileName: "KERM_MD-V2-tts.m4a"
        }, {
          quoted: _0x55aba2
        });
@@ -1420,7 +1420,7 @@ smd(
      };
      let _0x4737bb = {
        audio: _0x2ba501,
-       fileName: "QUEEN_ANITA-V2 tiktok Sound" + _0x19c223 + ".m4a",
+       fileName: "KERM_MD-V2 tiktok Sound" + _0x19c223 + ".m4a",
        mimetype: "audio/mpeg",
        ptt: true,
        contextInfo: _0x29fdd9
@@ -1644,7 +1644,7 @@ smd(
          return m.reply("*_Could not find the file!_*");
        }
  
-       const caption = `『 *QUEEN_ANITA-V2 • MEDIAFIRE DOWNLOADER* 』\n\n *Name* : ${result.name}\n *Size* : ${result.size}\n *Mime* : ${result.mime}\n\n\n${Config.caption}`;
+       const caption = `『 *KERM_MD-V2 • MEDIAFIRE DOWNLOADER* 』\n\n *Name* : ${result.name}\n *Size* : ${result.size}\n *Mime* : ${result.mime}\n\n\n${Config.caption}`;
        const fancyCaption = await fancytext(caption, 25);
        const contextInfo = {
          ...(await m.bot.contextInfo(Config.botname, "MEDIAFIRE")),
@@ -1680,7 +1680,7 @@ smd(
      }
      let _0x3b2ca6 = await yts(_0x4ec99f);
      let _0x4123ae = _0x3b2ca6.all[0];
-     let _0x5883a9 = "\t *QUEEN_ANITA-V2 • SONG DOWNLOADER*   \n\n*Title :* " + _0x4123ae.title + "\nUrl : " + _0x4123ae.url + "\n*Description :* " + _0x4123ae.timestamp + "\n*Views :* " + _0x4123ae.views + "\n*Uploaded :* " + _0x4123ae.ago + "\n*Author :* " + _0x4123ae.author.name + "\n\n\n_Reply 1 To Video_ Or _1 document_\n_Reply 2 To Audio_ Or _2 document_";
+     let _0x5883a9 = "\t *KERM_MD-V2 • SONG DOWNLOADER*   \n\n*Title :* " + _0x4123ae.title + "\nUrl : " + _0x4123ae.url + "\n*Description :* " + _0x4123ae.timestamp + "\n*Views :* " + _0x4123ae.views + "\n*Uploaded :* " + _0x4123ae.ago + "\n*Author :* " + _0x4123ae.author.name + "\n\n\n_Reply 1 To Video_ Or _1 document_\n_Reply 2 To Audio_ Or _2 document_";
      let _0x3885cc = await smdBuffer(_0x4123ae.thumbnail);
      var _0x44a363 = {
        ...(await _0x2c2023.bot.contextInfo(Config.botname, "ʏᴏᴜᴛᴜʙᴇ ꜱᴏɴɢ", _0x3885cc))
@@ -1707,7 +1707,7 @@ smd(
        return await _0x1c8285.reply("*_Give Me Search Query!_*");
      }
      let _0x2878ec = await yts(_0xca939c);
-     let _0x4186e4 = "*QUEEN_ANITA-V2 • YOUTUBE DOWNLOADER* \n*_______________________________* \n\n_Reply Any Number To Download._\n  _For Audio: 1 mp3._\n  _For Video: 1 video._\n  _For document: 1 document._\n\n_Results For : " + _0xca939c + "_ \n\n";
+     let _0x4186e4 = "*KERM_MD-V2 • YOUTUBE DOWNLOADER* \n*_______________________________* \n\n_Reply Any Number To Download._\n  _For Audio: 1 mp3._\n  _For Video: 1 video._\n  _For document: 1 document._\n\n_Results For : " + _0xca939c + "_ \n\n";
      let _0x463366 = 1;
      for (let _0x308e22 of _0x2878ec.all) {
        _0x4186e4 += " \n*" + _0x463366++ + " : " + _0x308e22.title + (_0x308e22.timestamp ? "(" + _0x308e22.timestamp + ")" : "") + "*\n*Url : " + _0x308e22.url + "*";
@@ -1974,7 +1974,7 @@ smd(
          url: _0x59bbaa
        },
        mimetype: "audio/mpeg",
-       fileName: "QUEEN_ANITA-V2--" + _0x1d542b[1] + ".mp3",
+       fileName: "KERM_MD-V2--" + _0x1d542b[1] + ".mp3",
        caption: Config.caption,
        contextInfo: _0x10e2fa
      };
@@ -1995,7 +1995,7 @@ smd(
  }) => {
    if (_0xb75e78.quoted && _0xb75e78.text) {
      const _0x5b8ee5 = _0xb75e78.quoted.text.split("\n");
-     if (_0x5b8ee5[0].includes("QUEEN_ANITA-V2 • SONG DOWNLOADER")) {
+     if (_0x5b8ee5[0].includes("KERM_MD-V2 • SONG DOWNLOADER")) {
        const _0x1724ba = _0x5b8ee5.find(_0x525632 => _0x525632.startsWith("Url :"));
        let _0x43a95e = _0x1724ba.replace("Url :", "").trim();
        try {
@@ -2048,7 +2048,7 @@ smd(
        } catch (_0x189dd8) {
          return await _0xb75e78.reply("Error While Downloading Video : " + _0x189dd8);
        }
-     } else if (_0x5b8ee5[0].includes("QUEEN_ANITA-V2 • YOUTUBE DOWNLOADER")) {
+     } else if (_0x5b8ee5[0].includes("KERM_MD-V2 • YOUTUBE DOWNLOADER")) {
        let _0x307bb6 = "*" + _0xb75e78.text.split(" ")[0] + " : ";
        const _0x56275d = _0x5b8ee5.find(_0x3b5e74 => _0x3b5e74.startsWith(_0x307bb6));
        if (_0x56275d) {
@@ -2088,7 +2088,7 @@ smd(
            _0xb75e78.error(_0x3de0e2 + "\n\nCommand yts Listener", _0x3de0e2, "*Video Not Found!*");
          }
        }
-     } else if (_0x5b8ee5[0].includes("QUEEN_ANITA-V2 • APK DOWNLOAD LIST")) {
+     } else if (_0x5b8ee5[0].includes("KERM_MD-V2 • APK DOWNLOAD LIST")) {
        let _0x35d668 = "*" + _0xb75e78.text.split(" ")[0] + " : ";
        const _0x205a5f = _0x5b8ee5.find(_0x304058 => _0x304058.startsWith(_0x35d668));
        if (_0x205a5f) {
