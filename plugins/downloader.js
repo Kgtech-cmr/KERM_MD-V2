@@ -14,7 +14,7 @@ const {
    download
  } = require("aptoide-scraper");
  const googleTTS = require("google-tts-api");
- const ytdl = require("ytdl-core");
+ const ytdl = require("@distube/ytdl-core");
  const yts = require("secktor-pack");
  const fs = require("fs-extra");
  const axios = require("axios");
@@ -75,7 +75,7 @@ const {
 *Followers:* ${followers}
 *Following:* ${following}
 
-\t*KERM_MD-V2 IG STALKER*
+\t*KERM IG STALKER*
 `;
 
       await m.bot.sendFromUrl(m.from, photo_profile, caption, m, {}, "image");
@@ -169,7 +169,7 @@ smd(
   async (m, username) => {
     try {
       if (!username) {
-        return await m.send("*_Please provide a GitHub username bro😑!_*");
+        return await m.send("*_Please provide a GitHub username bro🦅!_*");
       }
 
       const apiUrl = `https://api.maher-zubair.tech/stalk/githubuser?q=${encodeURIComponent(
@@ -245,7 +245,7 @@ smd(
   async (m, ipAddress) => {
     try {
       if (!ipAddress) {
-        return await m.send("*_Please provide an IP address bro😑, I'll track the ip!_*");
+        return await m.send("*_Please provide an IP address man!_*");
       }
 
       const apiUrl = `https://api.maher-zubair.tech/stalk/ip?q=${encodeURIComponent(
@@ -371,7 +371,7 @@ smd(
  }, async (m, url) => {
    try {
      if (!url) {
-       return await m.send("*_Please provide a Google Drive URL man!_*");
+       return await m.send("*_Please provide a Google Drive URL!_*");
      }
  
      const apiUrl = `https://api.maher-zubair.tech/download/gdrive?url=${encodeURIComponent(url)}`;
@@ -408,7 +408,7 @@ smd(
      try {
        const url = input.trim();
        if (!url || !isValidUrl(url)) {
-         return await message.send("*_Please provide a valid Spotify URL this man._*");
+         return await message.send("*_Please provide a valid Spotify URL._*");
        }
  
        const apiUrl = `https://api.maher-zubair.tech/download/spotify?url=${encodeURIComponent(
@@ -480,7 +480,7 @@ smd(
      try {
        const query = input.trim();
        if (!query) {
-         return await message.send("*_Please provide a search query this man._*");
+         return await message.send("*_Please provide a search query._*");
        }
  
        const apiUrl = `https://api.maher-zubair.tech/search/spotify?q=${encodeURIComponent(
@@ -630,7 +630,7 @@ smd(
          let _0x13ee38 = await getBuffer(_0x3c2608);
          await _0x19df48.reply(_0x13ee38, {
            packname: Config.packname,
-           author: "Asta-Md"
+           author: "KERM_MD-V2"
          }, "sticker");
        } else {
          await _0x19df48.bot.sendMessage(_0x19df48.chat, {
@@ -690,6 +690,7 @@ smd(
  );
  smd({
    pattern: "instagram2",
+    alias: ["insta", "ig"],
    desc: "Download media from Instagram.",
    category: "downloader",
    filename: __filename,
@@ -802,7 +803,7 @@ smd(
            const sticker = await getBuffer(fileUrl);
            await message.reply(
              sticker,
-             { packname: Config.packname, author: "Asta-Md" },
+             { packname: Config.packname, author: "KERM_MD-V2" },
              "sticker"
            );
          } else {
@@ -946,7 +947,7 @@ smd(
  smd(
    {
      pattern: "facebook2",
-     alias: ["fbhd"],
+     alias: ["fbhd","fb"],
      desc: "Downloads Facebook videos in HD.",
      category: "downloader",
      filename: __filename,
@@ -999,7 +1000,7 @@ smd(
  }, async (_0x7b09ff, _0x4af114) => {
    try {
      if (!_0x4af114) {
-       return _0x7b09ff.reply("*_Uhh dear, Give me App Name man😑!_*");
+       return _0x7b09ff.reply("*_Uhh dear, Give me App Name!_*");
      }
      let _0x468cc8 = await search(_0x4af114);
      let _0x538b40 = {};
@@ -1061,12 +1062,12 @@ smd(
  }, async (_0x19d516, _0x1cb962) => {
    try {
      if (!_0x1cb962) {
-       return await _0x19d516.reply("*_Uhh pLease, give me app name bro!_*");
+       return await _0x19d516.reply("*_Uhh pLease, give me app name!_*");
      }
      const _0x4ac8f2 = await search(_0x1cb962);
      if (_0x4ac8f2.length) {
        let _0x3d85b = await download(_0x4ac8f2[0].id);
-       let _0x307e6f = "KERM_MED-V2 • APK DOWNLOADER* \n*________________________________* \n\n*_Reply Any Number To Download._*\n_Results For : " + _0x1cb962 + "_ \n";
+       let _0x307e6f = "*KERM MD V2 -ᴍᴅ • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ* \n*________________________________* \n\n*_Reply Any Number To Download._*\n_Results For : " + _0x1cb962 + "_ \n";
        for (let _0x5a5920 = 0; _0x5a5920 < _0x4ac8f2.length; _0x5a5920++) {
          _0x307e6f += "\n*" + (_0x5a5920 + 1) + " : " + _0x4ac8f2[_0x5a5920].name + "* \n*Id : " + _0x4ac8f2[_0x5a5920].id + "* \n";
        }
@@ -1138,7 +1139,7 @@ smd(
  smd(
    {
      pattern: "gitclone",
-     desc: "Downloads apks  .",
+   desc: "Downloads apks  .",
      category: "downloader",
      filename: __filename,
      use: "<add sticker url.>",
@@ -1152,7 +1153,7 @@ smd(
          : "";
        if (!_0x1c586e) {
          return await _0x1ae8f8.reply(
-           "*Provide Repo Url, _.gitclone https://github.com/Astropeda/Asta-Md_*"
+           "*Provide Repo Url, _.gitclone https://github.com/Kgtech-cmr/KERM_MD-V2_*"
          );
        }
        const _0x5906ab =
@@ -1197,12 +1198,12 @@ smd(
    desc: "text to speech.",
    category: "downloader",
    filename: __filename,
-   use: "<Hii,this is KERM_MD-V2>"
+   use: "<Hii,this is Asta>"
  }, async (_0x55aba2, _0x56da6b) => {
    try {
      let _0x204f81 = _0x55aba2.reply_text ? _0x55aba2.reply_text : _0x56da6b;
      if (!_0x204f81) {
-       return _0x55aba2.reply("*_Example : .tts Hi,I am KERM_MD-V2 whatsapp bot._*");
+       return _0x55aba2.reply("*_Example : .tts Hi,I am Kerm-Md whatsapp bot._*");
      }
      try {
        let _0x1974d5 = _0x56da6b ? _0x56da6b.split(" ")[0].toLowerCase() : "en";
@@ -1217,7 +1218,7 @@ smd(
          },
          mimetype: "audio/mpeg",
          ptt: true,
-         fileName: "KERM_MD-V2-tts.m4a"
+         fileName: "Kerm-Md-tts.m4a"
        }, {
          quoted: _0x55aba2
        });
@@ -1233,7 +1234,7 @@ smd(
          },
          mimetype: "audio/mpeg",
          ptt: true,
-         fileName: "KERM_MD-V2-tts.m4a"
+         fileName: "WASI-Md-tts.m4a"
        }, {
          quoted: _0x55aba2
        });
@@ -1345,61 +1346,8 @@ smd(
    return false;
  }
  smd({
-   pattern: "gana",
-   alias: ["playy"],
-   desc: "Sends info about the query(of youtube video/audio).",
-   category: "downloader",
-   filename: __filename,
-   use: "<faded-Alan walker.>"
- }, async (_0x54463e, _0x1f76d0) => {
-   try {
-     let _0x25d045 = _0x1f76d0 ? _0x1f76d0 : _0x54463e.reply_text;
-     var _0x2e913a = _0x25d045.toLowerCase().includes("doc") ? "document" : "audio";
-     if (!_0x25d045) {
-       return _0x54463e.reply("*" + prefix + "play back in black*");
-     }
-     let _0x2eca3d = ytIdRegex.exec(_0x25d045) || [];
-     let _0xb6fd2d = _0x2eca3d[0] || false;
-     if (!_0xb6fd2d) {
-       let _0x4bcf6d = await yts(_0x25d045);
-       let _0xa244ed = _0x4bcf6d.videos[0];
-       _0xb6fd2d = _0xa244ed.url;
-     }
-     _0x2eca3d = ytIdRegex.exec(_0xb6fd2d) || [];
-     let _0x6845ab = await yt.getInfo(_0x2eca3d[1]);
-     let _0x516e89 = _0x6845ab.title || _0x37323e || _0x2eca3d[1];
-     if (_0x6845ab && _0x6845ab.duration >= videotime) {
-       return await _0x54463e.reply("*_Can't dowanload, file duration too big_*");
-     }
-     await _0x54463e.send("_Downloading " + _0x6845ab.title + "?_");
-     let _0x37323e = await yt.download(_0x2eca3d[1], {
-       type: "audio",
-       quality: "best"
-     });
-     var _0x28302f = {
-       ...(await _0x54463e.bot.contextInfo(Config.botname, "ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ"))
-     };
-     if (_0x37323e) {
-       await _0x54463e.bot.sendMessage(_0x54463e.jid, {
-         [_0x2e913a]: {
-           url: _0x37323e
-         },
-         fileName: _0x516e89,
-         mimetype: "audio/mpeg",
-         contextInfo: _0x28302f
-       });
-     } else {
-       _0x54463e.send("*_Video not Found_*");
-     }
-     try {
-       fs.unlinkSync(_0x37323e);
-     } catch {}
-   } catch (_0x593953) {
-     return _0x54463e.error(_0x593953 + "\n\ncommand: play", _0x593953, "*_Video not Found_*");
-   }
- });
- smd({
    pattern: "sound",
+    alias: ["kg", "aine","mentalism","alive","waso"],
    desc: "Downloads ringtone.",
    category: "downloader",
    filename: __filename,
@@ -1420,7 +1368,7 @@ smd(
      };
      let _0x4737bb = {
        audio: _0x2ba501,
-       fileName: "KERM_MD-V2 tiktok Sound" + _0x19c223 + ".m4a",
+       fileName: "Asta-Md tiktok Sound" + _0x19c223 + ".m4a",
        mimetype: "audio/mpeg",
        ptt: true,
        contextInfo: _0x29fdd9
@@ -1433,7 +1381,7 @@ smd(
    }
  });
  smd(
-   {
+     {
      pattern: "tiktok",
      alias: ["tt", "ttdl"],
      desc: "Downloads Tiktok Videos Via Url.",
@@ -1463,7 +1411,7 @@ smd(
          );
        }
  
-       const apiUrl = "https://api-smd.onrender.com/api/ttdl2";
+       const apiUrl = "https://aemt.me/download/tiktokdl?url=";
        const response = await fetch(`${apiUrl}?url=${tiktokUrl}`);
        const data = await response.json();
  
@@ -1505,7 +1453,106 @@ smd(
          );
        }
  
-       const apiUrl = `https://api.maher-zubair.tech/download/tiktok?url=${encodeURIComponent(
+       const apiUrl = `https://aemt.me/download/tiktokdl?url=${encodeURIComponent(
+         tiktokUrl
+       )}`;
+       const response = await fetchJson(apiUrl);
+ 
+       if (response.status !== 200) {
+         return await message.reply(`*Error: ${response.result}*`);
+       }
+ 
+       const videoUrl = response.result;
+       const fileType = videoUrl.toLowerCase().includes("mp4")
+         ? "video"
+         : "document";
+ 
+       await message.send(
+         videoUrl,
+         { caption: Config.caption },
+         fileType,
+         message
+       );
+     } catch (error) {
+       console.error(error);
+       return message.error(`${error}\n\ncommand: tiktok`, error);
+     }
+   }
+ );
+   /**{
+     pattern: "tiktok",
+     alias: ["tt", "ttdl"],
+     desc: "Downloads Tiktok Videos Via Url.",
+     category: "downloader",
+     filename: __filename,
+     use: "<add tiktok url.>",
+   },
+   async (message, url) => {
+     try {
+       const fileType = url.toLowerCase().includes("doc")
+         ? "document"
+         : url.toLowerCase().includes("mp3")
+         ? "audio"
+         : "video";
+ 
+       if (!url) {
+         return await message.reply(
+           `*Uhh Please, Provide me tiktok Video Url*\n*_Ex ${prefix}tiktok https://www.tiktok.com/@dakwahmuezza/video/7150544062221749531_*`
+         );
+       }
+ 
+       const tiktokUrl = url ? url.split(" ")[0] : "";
+ 
+       if (!/tiktok/.test(tiktokUrl)) {
+         return await message.reply(
+           "*Uhh Please, Give me Valid Tiktok Video Url!*"
+         );
+       }
+ 
+       const apiUrl = "https://aemt.me/download/tiktokdl?url=";
+       const response = await fetch(`${apiUrl}?url=${tiktokUrl}`);
+       const data = await response.json();
+ 
+       if (data && data.video && data.video.noWatermark) {
+         return await message.send(
+           data.video.noWatermark,
+           { caption: Config.caption },
+           fileType,
+           message
+         );
+       } else {
+         return await message.reply("sᴏʀʀʏ ʙᴜᴅᴅʏ ɪ ᴀᴍ ғᴀᴄɪɴɢ ɪɴᴛᴇʀɴᴀʟ sᴇʀᴠᴇʀ ᴇʀʀᴏʀ");
+       }
+     } catch (error) {
+       return message.error(`${error}\n\ncommand: tiktok`, error);
+     }
+   }
+ );
+ smd(
+   {
+     pattern: "tiktok2",
+      alias: ["kt", "tl","tk"],
+     desc: "Downloads Tiktok Videos Via Url.",
+     category: "downloader",
+     filename: __filename,
+     use: "<add tiktok url.>",
+   },
+   async (message, url) => {
+     try {
+       if (!url) {
+         return await message.reply(
+           `*Uhh Please, Provide me tiktok Video Url*\n*_Ex ${prefix}tiktok https://www.tiktok.com/@dakwahmuezza/video/7150544062221749531_*`
+         );
+       }
+ 
+       const tiktokUrl = url.split(" ")[0];
+       if (!/tiktok/.test(tiktokUrl)) {
+         return await message.reply(
+           "*Uhh Please, Give me Valid Tiktok Video Url!*"
+         );
+       }
+ 
+       const apiUrl = `https://aemt.me/download/tiktokdl?url=${encodeURIComponent(
          tiktokUrl
        )}`;
        const response = await fetchJson(apiUrl);
@@ -1564,7 +1611,7 @@ smd(
    } catch (_0x430a86) {
      return _0x1da3da.error(_0x430a86 + "\n\ncommand: ringtone", _0x430a86, "*_Ringtone not found with given name!!_*");
    }
- });
+ });**/
  smd(
    {
      pattern: "pinterest",
@@ -1644,7 +1691,7 @@ smd(
          return m.reply("*_Could not find the file!_*");
        }
  
-       const caption = `『 *KERM_MD-V2 • MEDIAFIRE DOWNLOADER* 』\n\n *Name* : ${result.name}\n *Size* : ${result.size}\n *Mime* : ${result.mime}\n\n\n${Config.caption}`;
+       const caption = `『 *KERM MD V2 -ᴍᴅ Mᴇᴅɪᴀғɪʀᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ* 』\n\n *Name* : ${result.name}\n *Size* : ${result.size}\n *Mime* : ${result.mime}\n\n\n${Config.caption}`;
        const fancyCaption = await fancytext(caption, 25);
        const contextInfo = {
          ...(await m.bot.contextInfo(Config.botname, "MEDIAFIRE")),
@@ -1667,8 +1714,8 @@ smd(
    }
  );
  smd({
-   pattern: "play",
-   alias: ["audio","song"],
+   pattern: "song",
+   alias: ["audio"],
    desc: "Downloads audio from youtube.",
    category: "downloader",
    filename: __filename,
@@ -1680,7 +1727,7 @@ smd(
      }
      let _0x3b2ca6 = await yts(_0x4ec99f);
      let _0x4123ae = _0x3b2ca6.all[0];
-     let _0x5883a9 = "\t *KERM_MD-V2 • SONG DOWNLOADER*   \n\n*Title :* " + _0x4123ae.title + "\nUrl : " + _0x4123ae.url + "\n*Description :* " + _0x4123ae.timestamp + "\n*Views :* " + _0x4123ae.views + "\n*Uploaded :* " + _0x4123ae.ago + "\n*Author :* " + _0x4123ae.author.name + "\n\n\n_Reply 1 To Video_ Or _1 document_\n_Reply 2 To Audio_ Or _2 document_";
+     let _0x5883a9 = "\t *KERM MD V2 -ᴍᴅ • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*   \n\n*Title :* " + _0x4123ae.title + "\nUrl : " + _0x4123ae.url + "\n*Description :* " + _0x4123ae.timestamp + "\n*Views :* " + _0x4123ae.views + "\n*Uploaded :* " + _0x4123ae.ago + "\n*Author :* " + _0x4123ae.author.name + "\n\n\n_Reply 1 for Video_ Or _1 document_\n_Reply 2 for Audio_ Or _2 document_";
      let _0x3885cc = await smdBuffer(_0x4123ae.thumbnail);
      var _0x44a363 = {
        ...(await _0x2c2023.bot.contextInfo(Config.botname, "ʏᴏᴜᴛᴜʙᴇ ꜱᴏɴɢ", _0x3885cc))
@@ -1691,7 +1738,35 @@ smd(
        contextInfo: _0x44a363
      });
    } catch (_0x86b411) {
-     return _0x2c2023.error(_0x86b411 + "\n\ncommand: mediafire", _0x86b411, "*_File not found!!_*");
+     return _0x2c2023.error(_0x86b411 + "\n\ncommand: song", _0x86b411, "*_File not found!!_*");
+   }
+ });
+smd({
+   pattern: "play",
+   alias: ["music"],
+   desc: "Downloads audio from youtube.",
+   category: "downloader",
+   filename: __filename,
+   use: "<give text>"
+ }, async (_0x2c2023, _0x4ec99f) => {
+   try {
+     if (!_0x4ec99f) {
+       return await _0x2c2023.reply("*_Give Me Search Query_*");
+     }
+     let _0x3b2ca6 = await yts(_0x4ec99f);
+     let _0x4123ae = _0x3b2ca6.all[0];
+     let _0x5883a9 = "\t *KERM MD V2 -ᴍᴅ • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*   \n\n*Title :* " + _0x4123ae.title + "\nUrl : " + _0x4123ae.url + "\n*Description :* " + _0x4123ae.timestamp + "\n*Views :* " + _0x4123ae.views + "\n*Uploaded :* " + _0x4123ae.ago + "\n*Author :* " + _0x4123ae.author.name + "\n\n\n_Reply 1 for Video_ Or _1 document_\n_Reply 2 for Audio_ Or _2 document_";
+     let _0x3885cc = await smdBuffer(_0x4123ae.thumbnail);
+     var _0x44a363 = {
+       ...(await _0x2c2023.bot.contextInfo(Config.botname, "ʏᴏᴜᴛᴜʙᴇ ꜱᴏɴɢ", _0x3885cc))
+     };
+     await _0x2c2023.bot.sendMessage(_0x2c2023.jid, {
+       image: _0x3885cc,
+       caption: _0x5883a9,
+       contextInfo: _0x44a363
+     });
+   } catch (_0x86b411) {
+     return _0x2c2023.error(_0x86b411 + "\n\ncommand: play", _0x86b411, "*_File not found!!_*");
    }
  });
  cmd({
@@ -1707,7 +1782,7 @@ smd(
        return await _0x1c8285.reply("*_Give Me Search Query!_*");
      }
      let _0x2878ec = await yts(_0xca939c);
-     let _0x4186e4 = "*KERM_MD-V2 • YOUTUBE DOWNLOADER* \n*_______________________________* \n\n_Reply Any Number To Download._\n  _For Audio: 1 mp3._\n  _For Video: 1 video._\n  _For document: 1 document._\n\n_Results For : " + _0xca939c + "_ \n\n";
+     let _0x4186e4 = "*KERM MD V2 -ᴍᴅ • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ* \n*_______________________________* \n\n_Reply Any Number To Download._\n  _For Audio: 1 mp3._\n  _For Video: 1 video._\n  _For document: 1 document._\n\n_Results For : " + _0xca939c + "_ \n\n";
      let _0x463366 = 1;
      for (let _0x308e22 of _0x2878ec.all) {
        _0x4186e4 += " \n*" + _0x463366++ + " : " + _0x308e22.title + (_0x308e22.timestamp ? "(" + _0x308e22.timestamp + ")" : "") + "*\n*Url : " + _0x308e22.url + "*";
@@ -1855,7 +1930,7 @@ smd(
  });
  smd({
    pattern: "ytmp3",
-   alias: ["yta","music"],
+   alias: ["yta"],
    desc: "Downloads audio by yt link.",
    category: "downloader",
    use: "<yt video url>"
@@ -1974,7 +2049,7 @@ smd(
          url: _0x59bbaa
        },
        mimetype: "audio/mpeg",
-       fileName: "KERM_MD-V2--" + _0x1d542b[1] + ".mp3",
+       fileName: "Asta-Md--" + _0x1d542b[1] + ".mp3",
        caption: Config.caption,
        contextInfo: _0x10e2fa
      };
@@ -1995,7 +2070,7 @@ smd(
  }) => {
    if (_0xb75e78.quoted && _0xb75e78.text) {
      const _0x5b8ee5 = _0xb75e78.quoted.text.split("\n");
-     if (_0x5b8ee5[0].includes("KERM_MD-V2 • SONG DOWNLOADER")) {
+     if (_0x5b8ee5[0].includes("KERM MD V2 -ᴍᴅ • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")) {
        const _0x1724ba = _0x5b8ee5.find(_0x525632 => _0x525632.startsWith("Url :"));
        let _0x43a95e = _0x1724ba.replace("Url :", "").trim();
        try {
@@ -2048,7 +2123,7 @@ smd(
        } catch (_0x189dd8) {
          return await _0xb75e78.reply("Error While Downloading Video : " + _0x189dd8);
        }
-     } else if (_0x5b8ee5[0].includes("KERM_MD-V2 • YOUTUBE DOWNLOADER")) {
+     } else if (_0x5b8ee5[0].includes("ᴀsᴛᴀ-ᴍᴅ • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ")) {
        let _0x307bb6 = "*" + _0xb75e78.text.split(" ")[0] + " : ";
        const _0x56275d = _0x5b8ee5.find(_0x3b5e74 => _0x3b5e74.startsWith(_0x307bb6));
        if (_0x56275d) {
@@ -2088,7 +2163,7 @@ smd(
            _0xb75e78.error(_0x3de0e2 + "\n\nCommand yts Listener", _0x3de0e2, "*Video Not Found!*");
          }
        }
-     } else if (_0x5b8ee5[0].includes("KERM_MD-V2 • APK DOWNLOAD LIST")) {
+     } else if (_0x5b8ee5[0].includes("ᴀsᴛᴀ-ᴍᴅ • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ")) {
        let _0x35d668 = "*" + _0xb75e78.text.split(" ")[0] + " : ";
        const _0x205a5f = _0x5b8ee5.find(_0x304058 => _0x304058.startsWith(_0x35d668));
        if (_0x205a5f) {
@@ -2251,6 +2326,98 @@ smd(
      console[_0x38a391(217)](_0x4bcd8f);
    }
  });
+smd({
+  'pattern': "video",
+  'desc': "Downloads video from yt.",
+  'category': 'downloader',
+  'filename': __filename,
+  'use': "<faded-Alan Walker>"
+}, async (_0x5dab40, _0x5bce2e) => {
+  let _0x317812 = _0x5bce2e ? _0x5bce2e : _0x5dab40.reply_text;
+  var _0xb0f63e = _0x5bce2e.toLowerCase().includes('doc') ? 'document' : "video";
+  if (!_0x317812) {
+    return _0x5dab40.reply("*Use : " + prefix + "video Al Quran!*");
+  }
+  let _0x13f167 = /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed|shorts\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/.exec(_0x5bce2e) || [];
+  let _0x385cdd = _0x13f167[0x0] || false;
+  try {
+    if (!_0x385cdd) {
+      let _0x581afa = await yts(_0x317812);
+      let _0xc55c8 = _0x581afa.videos[0x0];
+      _0x385cdd = _0xc55c8.url;
+      _0x13f167 = /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed|shorts\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/.exec(_0x385cdd);
+    }
+  } catch {}
+  try {
+    let _0x390c0c = await ytdl.getInfo(_0x385cdd);
+    let _0x3ac7d6 = Math.floor(i.timestamp * 0x3c);
+    if (_0x3ac7d6 >= 0x7d0) {
+      _0xb0f63e = 'document';
+    }
+    let _0x2ae9c8 = _0x390c0c.videoDetails.title;
+    let _0x4b8a91 = './temp/' + _0x13f167[0x1] + '.mp4';
+    const _0x52c7c2 = ytdl(_0x385cdd, {
+      'filter': _0x4b3bd0 => _0x4b3bd0.itag == 0x16 || _0x4b3bd0.itag == 0x12
+    }).pipe(fs.createWriteStream(_0x4b8a91));
+    await new Promise((_0x224340, _0x2cee4e) => {
+      _0x52c7c2.on('error', _0x2cee4e);
+      _0x52c7c2.on("finish", _0x224340);
+    });
+    var _0x426e7e = {
+      ...(await _0x5dab40.bot.contextInfo(Config.botname, "ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ"))
+    };
+    let _0x46256c = {
+      [_0xb0f63e]: fs.readFileSync(_0x4b8a91),
+      'mimetype': 'video/mp4',
+      'fileName': _0x2ae9c8,
+      'caption': Config.caption,
+      'contextInfo': _0x426e7e
+    };
+    await _0x5dab40.bot.sendMessage(_0x5dab40.jid, _0x46256c, {
+      'quoted': _0x5dab40
+    });
+    try {
+      fs.unlinkSync(_0x4b8a91);
+    } catch {}
+    ;
+  } catch (_0x6c6c8d) {
+    console.log("ytdl Download video error:", _0x6c6c8d);
+    try {
+      let _0x5c3baf = await yt.getInfo(_0x13f167[0x1]);
+      if (_0x5c3baf.duration >= 0x7d0) {
+        _0xb0f63e = "document";
+      }
+      let _0x3083ae = {
+        'type': "video",
+        'quality': _0x5c3baf.pref_Quality || "best",
+        'format': "mp4"
+      };
+      let _0x57ada1 = await yt.download(_0x13f167[0x1], _0x3083ae);
+      var _0x426e7e = {
+        ...(await _0x5dab40.bot.contextInfo(Config.botname, "ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ"))
+      };
+      let _0x452f00 = _0x5c3baf.title || _0x57ada1 || _0x13f167[0x1] || "KERM MD -- YT Video";
+      if (_0x57ada1) {
+        await _0x5dab40.bot.sendMessage(_0x5dab40.chat, {
+          [_0xb0f63e]: {
+            'url': _0x57ada1
+          },
+          'fileName': _0x452f00,
+          'caption': Config.caption,
+          'mimetype': "video/mp4",
+          'contextInfo': _0x426e7e
+        });
+      } else {
+        await _0x5dab40.send("Video not Found");
+      }
+      try {
+        fs.unlinkSync('' + _0x57ada1);
+      } catch {}
+    } catch (_0xab1d64) {
+      return _0x5dab40.error(_0xab1d64 + "\n\ncommand: video", _0xab1d64, "*_Video not Found_*");
+    }
+  }
+});
  /*
  cmd({
     cmdname :"downloader",
