@@ -6,7 +6,7 @@ const {
  let asta = "#asta";
  smd({
    cmdname: "hrt",
-   alias: ["hearts","❤️"],
+   alias: ["hearts"],
    type: "emoji",
    info: "sending hearts",
    react: "❤️",
