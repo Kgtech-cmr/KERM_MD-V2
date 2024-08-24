@@ -6,7 +6,7 @@ const { smd, Config } = require('../lib')
 //---------------------------------------------------------------------------
 smd({
             pattern: "live",
-            desc: "Show Live Time Of Pakistan",
+            desc: "Show Live Time Of Cameroon",
             category: "fun",
             filename: __filename,
             use: '<group link.>',
