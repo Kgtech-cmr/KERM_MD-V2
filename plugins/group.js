@@ -527,7 +527,7 @@ const {
      var _0x53ec11 = await _0x53f8e3.bot.groupInviteCode(_0x53f8e3.chat);
      var _0x2e549f = "https://chat.whatsapp.com/";
      var _0x41db31 = "" + _0x2e549f + _0x53ec11;
-     return _0x53f8e3.reply("*Group Invite Link Is Here* \n*" + _0x41db31 + "*");
+     return _0x53f8e3.reply("\n" + _0x41db31 + "");
    } catch (_0x4e30e8) {
      await _0x53f8e3.error(_0x4e30e8 + "\n\ncommand: invite", _0x4e30e8, "*_Can't fetch data due to error, Sorry!!_*");
    }
