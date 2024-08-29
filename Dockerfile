@@ -9,20 +9,15 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/DeeCeeXxx/Queen_Anita-V2  /root/DeeCeeXxx
-WORKDIR /root/DeeCeeXxx/
+RUN git clone https://github.com/Kgtech-cmr/KERM_MD-V2  /root/Kerm_BOt
+WORKDIR /root/Kerm_Bot/
 
-# Clear npm cache and remove node_modules directories
-RUN npm cache clean --force
-RUN rm -rf ~/node_modules 
 
 COPY package.json .
-
+run npm install -g npm@10.2.4
 RUN npm install pm2 -g
 RUN npm install --legacy-peer-deps
 
 COPY . .
 
-EXPOSE 3000
-
-CMD ["npm","start" ]
+EXPOSE 5000
