@@ -1,5 +1,5 @@
 build:
-   docker:
-       web: Dockerfile
- run:
-   web: npm start
+  docker:
+      worker: Dockerfile
+run:
+   worker:   npm run kerm
