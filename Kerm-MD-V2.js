@@ -1,6 +1,6 @@
 FROM quay.io/sampandey001/secktor
 
-RUN git clone https://github.com/Itxxwasi/WASI-MD-V2.git /root/Itxxwasi
+RUN git clone https://github.com/Kgtech-cmr/KERM_MD-V2.git /root/Kgtech-cmr
 
 # Clear npm cache and remove node_modules directories
 RUN npm cache clean --force
