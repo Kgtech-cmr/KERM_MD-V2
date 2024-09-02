@@ -1,20 +1,20 @@
 {
-   "name": "WASI-MD-V2.1",
+   "name": "KERM_MD-V2",
    "version": "2.5.0",
-   "description": "Multi device whatsapp bot by itxxwasi ....",
+   "description": "Multi device whatsapp bot by KgTech ....",
    "main": "index.js",
    "type": "commonjs",
    "scripts": {
-      "run": "pm2 start . --deep-monitoring --attach --name Itxxwasi || node .",
-      "Itxxwasi ": "pm2 start . --deep-monitoring --attach --name Itxxwasi || node .",
+      "run": "pm2 start . --deep-monitoring --attach --name Kgtech || node .",
+      "Itxxwasi ": "pm2 start . --deep-monitoring --attach --name Kgtech || node .",
       "start": "pm2 start . --attach --name Itxxwasi",
       "stop": "pm2 stop Itxxwasi",
-       "heroku-postbuild": "git clone https://github.com/Itxxwasi/WASI-MD-V2.1.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
-      "fis-heroku-postbuild": "git clone https://github.com/Itxxwasi/WASI-MD-V2.1.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
+       "heroku-postbuild": "git clone https://github.com/Kgtech-cmr/KERM_MD-V2.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
+      "fis-heroku-postbuild": "git clone https://github.com/Kgtech-cmr/KERM_MD-V2.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
       "postinstall": "npx puppeteer@latest install --y"
      
    },
-   "author": "Itxxwasi",
+   "author": "Kgtech",
    "license": "Apache-2.0",
    "dependencies": {
       "@adiwajshing/keyed-db": "^0.2.4",
@@ -76,10 +76,10 @@
    },
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/Itxxwasi/WASI-MD-V2.1.git"
+      "url": "git+https://github.com/Kgtech-cmr/KERM_MD-V2.git"
    },
    "bugs": {
-      "url": "https://github.com/Itxxwasi/WASI-MD-V2.1/issues"
+      "url": "https://github.com/Kgtech-cmr/KERM_MD-V2.git/issues"
    },
-   "homepage": "https://github.com/Itxxwasi/WASI-MD-V2.1#readme"
+   "homepage": "https://github.com/Kgtech-cmr/KERM_MD-V2.git#readme"
 }
