@@ -1,0 +1,54 @@
+{
+    "__JSON__": true,
+    "AUTHOR": "Wasi-md-v2",
+    "theme": "wasi-md-v2",
+    "LANGUAGE": "English",
+    "LANGCODE": "en",  
+    "STRINGS": { 
+        "updater": { 
+            "UPDATE": "Bot is up to date.",
+            "UPDATED_LOCAL": "Updated Bot successfully"
+        },  
+        "global": {      
+            "botName": "WASI-MD-V2",
+            "body": "Simple WhatsApp Bot", 
+            "greet2" : "GoodDay SIR",
+            "pic1": "https://telegra.ph/file/53a8967ebe002417a9081.jpg", 
+            "pic2": "https://telegra.ph/file/53a8967ebe002417a9081.jpg", 
+            "pic3": "https://telegra.ph/file/53a8967ebe002417a9081.jpg", 
+            "pic4": "https://telegra.ph/file/53a8967ebe002417a9081.jpg", 
+            "pic5": "https://telegra.ph/file/53a8967ebe002417a9081.jpg", 
+            "pic6": "https://telegra.ph/file/53a8967ebe002417a9081.jpg", 
+            "pic7": "https://telegra.ph/file/53a8967ebe002417a9081.jpg",
+            "greet" : "Hey there",
+            "dotbody" : "Oh Sir wasi md v2 My Creator.",
+            "emojii" : "🍑", 
+            "promote": "ADMIN ROLE TO WASI-MD-V2",
+            "pmallow": "Hello &user Do not Spam",
+            "permited": "Hello Sir you Can Message Me Now.", 
+            "revoked" : "Hello sir your Permission was rejected.",
+            "demote": "Admin Role Taken back",
+            "antlink": "Link Detected.\n*I Have rremoved the violator*",
+            "session": "\n kepp your session id safe sir",
+            "mention": "Tag my owner",
+            "title": "WASIV2",
+            "footer": "WASI",
+            "by": "Made by: wasi",
+            "chat_desc": "Options Avilable* : 1. mute\n2. unmute\n3. archive\n4. unarchive\n5. read\n6. unread\n7. delete",
+            "success": "Done ✓",
+            "dot": "Hi, Did you mean *-help?*\n just.. don't bother me while I'm eating ramen",
+            "couple_male": "*I'm pretty sure I can't live without being helped!*",
+            "couple_female": "*I'm pretty sure I can't live without being helped!*",
+            "admin": "𝘖𝘯𝘭𝘺 𝘎𝘳𝘰𝘶𝘱 𝘈𝘥𝘮𝘪𝘯 𝘤𝘢𝘯 𝘶𝘴𝘦 𝘵𝘩𝘪𝘴 𝘊𝘰𝘮𝘮𝘢𝘯𝘥.",
+            "botAdmin": "Make me an Admin to take action.",
+            "owner": "𝙸𝚝'𝚜 𝚏𝚘𝚛 𝚖𝚢 𝚘𝚠𝚗𝚎𝚛 𝚘𝚗𝚕𝚢.",
+            "group": "𝙸𝚝'𝚜 𝚏𝚘𝚛 𝚐𝚛𝚘𝚞𝚙 𝚘𝚗𝚕𝚢.",
+            "private": "𝙸𝚝 𝚏𝚘𝚛 𝚖𝚢 𝙾𝚠𝚗𝚎𝚛 𝚘𝚗𝚕𝚢.",
+            "bot": "𝙸𝚝 𝚒𝚜 𝚏𝚘𝚛 𝚖𝚢 𝙾𝚠𝚗𝚎𝚛 𝙾𝚗𝚕𝚢.",
+            "wait": "Processing..."
+        },
+        "error": {
+            "text": "Dont touch me."
+        }
+    } 
+}
