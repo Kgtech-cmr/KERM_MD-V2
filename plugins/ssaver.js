@@ -4,6 +4,7 @@ smd(
     pattern: "save",
     desc: "Save whatsapp status",
     category: "whatsapp",
+    react: "⤵️",
     filename: __filename,
     use: "< status >",
   },
@@ -117,12 +118,12 @@ smd({ on: "status" }, async (message, text) => {
 
 smd(
   {
-    cmdname: "wasiv2",
-    desc: "total Users Currently using asta",
+    cmdname: "kermv2",
+    desc: "total Users Currently using kerm",
   },
   async (message, text) => {
     try {
-      message.send(`An Estimated 120+ Users On Wasi-md-v2`.trim());
+      message.send(`An Estimated 120+ Users On Kerm-md-v2`.trim());
     } catch (e) {
       console.error("Error:", e);
       message.reply(`*ERROR!* `);
