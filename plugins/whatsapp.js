@@ -94,7 +94,7 @@ smd(
         return await _0xd700b1.send(
           "*_provide text to update profile status!_*\n*_Example: " +
             prefix +
-            "bio Asta Md_*"
+            "bio Kerm Md_*"
         );
       }
       await _0xd700b1.bot.updateProfileStatus(_0xb45f41);
@@ -355,7 +355,7 @@ smd(
           "\nMade : " +
           (_0x433157.creation
             ? moment(_0x433157.creation * 1000)
-                .tz("Asia/Kolkata")
+                .tz("Cameroon/Douala")
                 .format("DD/MM/YYYY HH:mm:ss")
             : _0x433157.creation) +
           "\nMember : " +
@@ -393,7 +393,7 @@ cmd(
         return _0xcffaeb.reply(
           "Please Give Me User Name, \n *Example : " +
             prefix +
-            "vcard Asta Tech Info* "
+            "vcard Kerm Tech Info* "
         );
       }
       var _0x423556 = _0x4158fc.split(" ");
