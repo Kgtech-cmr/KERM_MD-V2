@@ -50,22 +50,24 @@
 const { smd, Config,smdBuffer,  prefix } = require('../lib')
 
 
-var surl = 'https://github.com/wasixd/WASI-MD' // Source URL
-const number = '923135673658'
-var name = ' 𝕎𝔸𝕊𝕀 𝕋𝔼ℂℍ'
+var surl = 'https://github.com/Kgtech-cmr/KERM_MD-V2' // Source URL
+const number = '237656520674'
+var name = '𝕂𝔾 𝕋𝔼ℂℍ'
 var body = '𝑇𝛩𝑈𝐶𝛨 𝛨𝛯𝑅𝛯'
-var image = 'https://telegra.ph/file/2c30fa9e6f61ef8ba03a2.jpg'
+var image = 'https://telegra.ph/file/e1234b5b7f3dfd91c8d84.jpg'
 let text = `╭═══ ━ ━ ━ ━ • ━ ━ ━ ━ ═══♡᭄
-│       「 𝐖𝐀𝐒𝐈 𝐓𝐄𝐂𝐇 𝐈𝐍𝐓𝐑𝐎  」
-│ Name      : 𝐖𝐀𝐒𝐈 
-│ Place       : 𝐈𝐒𝐋𝐀𝐌𝐀𝐁𝐀𝐃, 𝐏𝐀𝐊𝐈𝐒𝐓𝐀𝐍
+│       「 𝐊𝐆 𝚻𝚵𝐂𝚮 𝐈𝐍𝐓𝐑𝐎 」
+│ Dev 1      :  𝚪𝚫𝐘𝚫𝚴
+│ Dev 2       : 𝐆𝚰𝐅𝐅𝚫𝚪𝚵𝚴𝚯
+│ Place       : 𝐂𝚫𝚳𝚵𝚪𝚯𝐔𝚴, 𝐃𝚯𝐔𝚫𝐋𝚫
 │ Gender    :  𝐌𝐀𝐋𝐄
 │ Age          : 20
 │ education : 𝐁𝐒 𝐒𝐄 
 │ good vibes : 𝐒𝐓𝐀𝐘 𝐂𝐋𝐀𝐌
-│ Phone     : wa.me/923135673658
-│ Youtube   : youtube.com/@wasitech1
-│ GitHub    : https://github.com/Itxxwasi 
+│ Phone dev 1    : wa.me/237656520674
+│ phone dev 2 : wa.me/237650564445
+│ Youtube   : youtube.com/@kermhacktools
+│ GitHub    : https://github.com/Kgtech/cmr 
 
 ╰═══ ━ ━ ━ ━ • ━ ━ ━ ━ ═══♡᭄`
 
@@ -76,9 +78,10 @@ let text = `╭═══ ━ ━ ━ ━ • ━ ━ ━ ━ ═══♡᭄
  //---------------------------------------------------------------------------
  smd({
              pattern: "intro",
-             alias: ["wasi","waso"],
+             alias: ["dev","rayan"],
              desc: "Show intro of user",
              category: "fun",
+             react: "🧑‍💻",
              filename: __filename,
              use: '<group link.>',
          },
