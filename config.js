@@ -51,7 +51,7 @@ module.exports = {
   caption: process.env.CAPTION || "`BRAND PRODUCT OF ☞⌜ KG TECH⌝☜`",
   author: process.env.PACK_AUTHER || "KG TECH",
   packname: process.env.PACK_NAME || "Kerm-MD-V2",
-  botname: process.env.BOT_NAME || "*ᵏᵍ┘𝙺𝙴𝚁𝙼_𝙼𝙳_𝚅𝟸𖤐*",
+  botname: process.env.BOT_NAME || "ᵏᵍ┘𝙺𝙴𝚁𝙼_𝙼𝙳_𝚅𝟸𖤐",
   ownername: process.env.OWNER_NAME || "☞⌜ KG TECH⌝☜",
   errorChat: process.env.ERROR_CHAT || "",
   KOYEB_API: process.env.KOYEB_API || "false",
