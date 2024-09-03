@@ -1,6 +1,0 @@
- #heroku.yml file data to run Container
- build:
-   docker:
-       web: KERM_MD
- run:
-   web: npm start
