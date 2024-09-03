@@ -18,7 +18,7 @@
       "required" : false
     },
      "THEME" : {
-      "description": "ADD YOUR FAVORITE THEME AVAILABLE THEME ARE E.G BTS ,KERM GOJO, KIYOTAKA theme name should be capital latter's  ",
+      "description": "ADD YOUR FAVORITE THEME AVAILABLE THEME ARE E.G BTS ,KERM, GOJO, KIYOTAKA theme name should be capital latter's  ",
       "value": "KERM",
       "required" : false 
     },
