@@ -111,7 +111,6 @@
     "SESSION_ID": {
       "description": "put your SESSION_ID here.",
       "value": ""
-      "required": true
     },
     "MODE": {
       "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
