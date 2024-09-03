@@ -124,7 +124,7 @@ smd({
   );
  
    smd({
-           pattern: "wasi",
+           pattern: "kerm2",
            category: "search",
            desc: "Finds info about song",
            filename: __filename,
@@ -155,7 +155,7 @@ async(message, match) => {
  try{
 
    message.react("🔍")
-         if (!match) return message.reply(`Give me a user name like ${prefix}github Itxxwasi`)
+         if (!match) return message.reply(`Give me a user name like ${prefix}github Kgtech-cmr`)
 
          const { data } = await axios(`https://api.github.com/users/${match}`)
    if(!data) return await message.send(`*_Didn't get any results, Provide valid user name!_*`)
@@ -365,7 +365,7 @@ smd({
         },
         async(message, text) => {
           try{
-            if (!text) return message.reply(`*_Uhh please, give me a query_*\n*_Example : ${prefix}google Itxxwasi ser._*`);
+            if (!text) return message.reply(`*_Uhh please, give me a query_*\n*_Example : ${prefix}google Kerm md v2._*`);
             let google = require('google-it');
             google({ 'query': text}).then(res => {
                 let msg= `Google Search From : ${text} \n\n`;
