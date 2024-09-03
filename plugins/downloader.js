@@ -1198,7 +1198,7 @@ smd(
    desc: "text to speech.",
    category: "downloader",
    filename: __filename,
-   use: "<Hii,this is Asta>"
+   use: "<Hii,this is Kerm>"
  }, async (_0x55aba2, _0x56da6b) => {
    try {
      let _0x204f81 = _0x55aba2.reply_text ? _0x55aba2.reply_text : _0x56da6b;
@@ -1368,7 +1368,7 @@ smd(
      };
      let _0x4737bb = {
        audio: _0x2ba501,
-       fileName: "Asta-Md tiktok Sound" + _0x19c223 + ".m4a",
+       fileName: "Kerm-Md tiktok Sound" + _0x19c223 + ".m4a",
        mimetype: "audio/mpeg",
        ptt: true,
        contextInfo: _0x29fdd9
