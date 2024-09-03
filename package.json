@@ -7,8 +7,8 @@
    "scripts": {
       "run": "pm2 start . --deep-monitoring --attach --name Kgtech || node .",
       "Itxxwasi ": "pm2 start . --deep-monitoring --attach --name Kgtech || node .",
-      "start": "pm2 start . --attach --name Itxxwasi",
-      "stop": "pm2 stop Itxxwasi",
+      "start": "pm2 start . --attach --name Kerm Md",
+      "stop": "pm2 stop Kgtech",
        "heroku-postbuild": "git clone https://github.com/Kgtech-cmr/KERM_MD-V2.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
       "fis-heroku-postbuild": "git clone https://github.com/Kgtech-cmr/KERM_MD-V2.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
       "postinstall": "npx puppeteer@latest install --y"
