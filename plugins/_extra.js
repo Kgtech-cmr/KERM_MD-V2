@@ -160,7 +160,7 @@ smd({
   cmdname: "feature",
   alias: ["totalfeature", "features", "kerm2"],
   category: "tools",
-  react: "⏳","⌛️",
+  react: "⏳,⌛️",
   filename: __filename,
   info: "get counting for total features!"
 }, async _0x4e7c63 => {
