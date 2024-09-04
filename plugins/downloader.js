@@ -2076,7 +2076,7 @@ smd({
        try {
          await _0xb75e78.sendMessage(_0xb75e78.chat, {
            react: {
-             text: "✨",
+             text: "✔️",
              key: _0xb75e78.key
            }
          });
@@ -2134,7 +2134,7 @@ smd({
            if (_0x37a579.startsWith("http")) {
              await _0xb75e78.sendMessage(_0xb75e78.chat, {
                react: {
-                 text: "✨",
+                 text: "✔️",
                  key: _0xb75e78.key
                }
              });
@@ -2173,7 +2173,7 @@ smd({
            const _0x2407a8 = _0x14618c.split("*")[1].replace("Id : ", "").trim();
            await _0xb75e78.sendMessage(_0xb75e78.chat, {
              react: {
-               text: "✨",
+               text: "✔️",
                key: _0xb75e78.key
              }
            });
