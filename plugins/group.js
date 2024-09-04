@@ -1157,6 +1157,7 @@ const {
    alias: ["delete", "dlt"],
    desc: "Deletes message of any user",
    category: "group",
+   react: "🗑️",
    filename: __filename,
    use: "<quote/reply message.>"
  }, async _0x320d81 => {
