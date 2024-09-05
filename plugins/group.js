@@ -1049,6 +1049,7 @@ const {
    pattern: "add",
    desc: "Add that person in group",
    category: "group",
+   react: "➕",
    filename: __filename,
    use: "<number|reply|mention>"
  }, async (_0x3d5ec9, _0xa86e2f) => {
@@ -1069,7 +1070,7 @@ const {
      try {
        await _0x3d5ec9.bot.groupParticipantsUpdate(_0x3d5ec9.chat, [_0x23d1da], "add");
        await _0x3d5ec9.reply("*_User Added in Group!!_*");
-       _0x3d5ec9.react("✨");
+       _0x3d5ec9.react("✅");
      } catch (_0x381769) {
        await _0x3d5ec9.react("❌");
        await _0x3d5ec9.bot.sendMessage(_0x23d1da, {
@@ -1157,6 +1158,7 @@ const {
    alias: ["delete", "dlt"],
    desc: "Deletes message of any user",
    category: "group",
+   react: "🗑️",
    filename: __filename,
    use: "<quote/reply message.>"
  }, async _0x320d81 => {

@@ -88,9 +88,10 @@ smd({
 });
 smd({
   cmdname: "document",
-  alias: ["senddoc", "todoc"],
+  alias: ["senddoc", "doc"],
   desc: "send document for Replied image/video Message",
   category: "misc",
+  react: "📑",
   filename: __filename
 }, async (_0x7587f6, _0x11eeb1) => {
   try {
@@ -157,8 +158,9 @@ smd({
 });
 smd({
   cmdname: "feature",
-  alias: ["totalfeature", "features", "asta"],
+  alias: ["totalfeature", "features", "kerm2"],
   category: "tools",
+  react: ['⏳,⌛️'],
   filename: __filename,
   info: "get counting for total features!"
 }, async _0x4e7c63 => {
