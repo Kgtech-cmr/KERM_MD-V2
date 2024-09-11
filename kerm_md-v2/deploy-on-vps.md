@@ -25,8 +25,8 @@
 
    5. Clone Repo and install required packages
       ```
-      git clone https://github.com/Tahul121/RAHUL-MD
-      cd RAHUL-MD npm cd
+      git clone https://github.com/Kgtech-cmr/KERM_MD-V2
+      cd KERM_MD-V2 npm cd
       yarn install --network-concurrency 1
       ```
 
