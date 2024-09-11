@@ -38,26 +38,24 @@
       copy paste lines below.
 
       ```
-      OWNER_NUMBER="919547261290"
+      OWNER_NUMBER="237656520674"
       MONGODB_URI=mongodb+srv://rahul:rahul@cluster0.ik98tiw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
       SESSION_ID = "ID-here"
-      THUMB_IMAGE = "https://telegra.ph/file/a674ac6df55d0eb0f35a9.jpg"
+      THUMB_IMAGE = "https://telegra.ph/file/40ffc2a288542560c887c.jpg"
       port = 5000
-      email = "rsstatus004@gmail.com"
+      email = "Kermd237@gmail.com"
       global_url = "https://www.instagram.com/_________rahul004_________?igsh=MTYyNWVmejAwejN1aA=="
-      OWNER_NAME = "name"
-      AUTO_REACTION = false
-      FAKE_COUNTRY_CODE = 212
+      OWNER_NAME = "☞⌜ KG TECH⌝☜"
       READ_MESSAGE = false
       PREFIX = .
-      WARN_COUNT = 4
+      WARN_COUNT = 3
       DISABLE_PM = false
       ANTI_BAD_WORD = "fuck"
       LEVEL_UP_MESSAGE= true
       WELCOME_MESSAGE =  "*Hi,* @user \n*Welcome in* @gname \n*Member count* : @count th"
-      THEME= RAHUL-MD
+      THEME= KERM_MD-V2
       WORKTYPE = public
-      PACK_INFO = "Rahul;Bot-Md"
+      PACK_NAME = "Kerm-MD-V2"
       ANTILINK_VALUES = "chat.whatsapp.com"
       
       ```
