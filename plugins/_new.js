@@ -39,7 +39,7 @@ smd(
     filename: __filename,
   },
   async (message) => {
-    const SupportMsg = `FOR ALL YOUR CONCERNS, JOIN WHATSAPP SUPPORT TO FIND SOLUTIONS! \n\n *WHATSAPP SUPPORT :* https://chat.whatsapp.com/FpxvVBFOozA6IhNxIWhwFw\n\n ${Config.botname} *WORKS*`;
+    const SupportMsg = `FOR ALL YOUR CONCERNS, JOIN WHATSAPP SUPPORT TO FIND SOLUTIONS! \n\n *WHATSAPP SUPPORT :* https://chat.whatsapp.com/L97ROhxEFWH8zsgQftl9Hh\n\n ${Config.botname} *©️KGTECH*`;
 
     const contextInfo = {
       forwardingScore: 999,
