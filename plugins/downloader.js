@@ -1626,8 +1626,8 @@ smd(
          return m.reply("What picture are you looking for?");
        }
  
-       const apiUrl = `https://api.maher-zubair.tech/search/pinterest?q=${encodeURIComponent(
-         query
+       const apiUrl = `https://astro-api-crqy.onrender.com/`;
+         
        )}`;
        const response = await fetch(apiUrl);
  
