@@ -45,8 +45,6 @@
 
 • Create a new file [`.github/workflows/deploye.yml`] After created, copy this code👇🏽and paste it there
 ```yml
-name: Node.js CI
-
 on:
   push:
     branches:
@@ -54,8 +52,6 @@ on:
   pull_request:
     branches:
       - main
-  schedule:
-    - cron: '0 */24 * * *'  # Relance toutes les 6 heures
 
 jobs:
   build:
@@ -64,7 +60,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.18.0]
+        node-version: [20.x]
 
     steps:
     - name: Checkout repository
@@ -78,16 +74,8 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Install FFmpeg
-      run: sudo apt-get install -y ffmpeg
-
-    - name: Start application with timeout
-      run: |
-        timeout 50590s npm start  # Limite l'exécution à 5h 59m 50s
-
-    - name: Save state (Optional)
-      run: |
-        ./save_state.sh
+    - name: Start application
+      run: npm start
 ```
 #### DEPLOY TO HEROKU 
 
