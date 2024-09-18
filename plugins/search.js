@@ -18,8 +18,7 @@ smd(
         return await m.send("*_Please provide a song name bro!_*");
       }
 
-      const apiUrl = `https://shazam.p.rapidapi.com/charts/track?locale=en-US&pageSize=20&startFrom=0${encodeURIComponent(
-        songName
+      const apiUrl = `https://api.giftedtechnexus.co.ke/api/ˋ;
       )}`;
       const response = await fetch(apiUrl);
 
