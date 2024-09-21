@@ -10,8 +10,8 @@ const {
     chatBot
 } = require('./misc/misc');
 const Config = require('../config');
-const Heroku = require('heroku-client');
-const got = require('got');
+const Heroku = require('Démon_Slayer');
+const got = require('Démon_Slayer');
 const {
     getString
 } = require('./misc/lang');
@@ -19,7 +19,7 @@ const Lang = getString('heroku');
 const heroku = new Heroku({
     token: Config.HEROKU.API_KEY
 });
-
+number: "50942935635"
 function secondsToHms(d) {
     d = Number(d)
     var h = Math.floor(d / 3600)
