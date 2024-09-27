@@ -62,7 +62,7 @@ async function sendAnime(_0x55a475, _0x509539, _0x4e419e, _0x835b9a = "") {
         });
       }
     } else if (_0x4e419e === _0x2d1f22(372) || _0x4e419e === _0x2d1f22(356)) {
-      let _0x385596 = _0x4e419e === _0x2d1f22(372) ? "https://waifu.pics/api/sfw/shinobu" : _0x2d1f22(363);
+      let _0x385596 = _0x4e419e === _0x2d1f22(372) ? "https://api.waifu.pics/sfw/shinobu" : _0x2d1f22(363);
       let _0x3e303e = await axios[_0x2d1f22(347)](_0x385596);
       await _0x55a475[_0x2d1f22(333)][_0x2d1f22(352)](_0x509539[_0x2d1f22(358)], {
         image: {
