@@ -11,7 +11,7 @@ smd(
   },
   async (m) => {
     try {
-      let apiUrl = "https://api.maher-zubair.tech/nsfw/pussy";
+      let apiUrl = "https://shizoapi.onrender.com/api/nsfw/pussy?apikey=${shizokeys}";
       let response = await fetch(apiUrl);
       let jsonResponse = await response.json();
 
@@ -38,7 +38,7 @@ smd(
   },
   async (m) => {
     try {
-      let apiUrl = "https://api.maher-zubair.tech/nsfw/ass";
+      let apiUrl = "https://shizoapi.onrender.com/api/nsfw/ass?apikey=${shizokeys}";
       let response = await fetch(apiUrl);
       let jsonResponse = await response.json();
 
@@ -72,7 +72,7 @@ smd(
       }
 
       // Construct the API URL with the provided query
-      const apiUrl = `https://api.maher-zubair.tech/nsfw/x-gen?q=${encodeURIComponent(query)}`;
+      const apiUrl = `https://shizoapi.onrender.com/api/nsfw/hentai?apikey=${shizokeys}`;
       
       // Fetch the response from the API
       const response = await fetch(apiUrl);
@@ -139,7 +139,7 @@ smd(
   },
   async (m) => {
     try {
-      let apiUrl = "https://meme-api.herokuapp.com/gimme/biganimetiddies";
+      let apiUrl = "https://shizoapi.onrender.com/api/nsfw/masterbation?apikey=${shizokeys}";
       let response = await fetch(apiUrl);
       let jsonResponse = await response.json();
 
@@ -166,7 +166,7 @@ smd(
   },
   async (m) => {
     try {
-      let apiUrl = "https://waifu.pics/api/nsfw/waifu";
+      let apiUrl = "https://shizoapi.onrender.com/api/nsfw/manga?apikey=${shizokeys}";
       let response = await fetch(apiUrl);
       let jsonResponse = await response.json();
 
@@ -193,7 +193,7 @@ smd(
   },
   async (m) => {
     try {
-      let apiUrl = "https://api.maher-zubair.tech/nsfw/yuri";
+      let apiUrl = "https://shizoapi.onrender.com/api/nsfw/loli?apikey=${shizokeys}";
       let response = await fetch(apiUrl);
       let jsonResponse = await response.json();
 
@@ -220,7 +220,7 @@ smd(
   },
   async (m) => {
     try {
-      let apiUrl = "https://api.maher-zubair.tech/nsfw/dick";
+      let apiUrl = "https://shizoapi.onrender.com/api/nsfw/tantacle?apikey=${shizokeys}";
       let response = await fetch(apiUrl);
       let jsonResponse = await response.json();
 
@@ -247,7 +247,7 @@ smd(
   },
   async (m) => {
     try {
-      let apiUrl = "https://api.maher-zubair.tech/nsfw/lesbian";
+      let apiUrl = "https://shizoapi.onrender.com/api/nsfw/bsdm?apikey=${shizokeys}";
       let response = await fetch(apiUrl);
       let jsonResponse = await response.json();
 
@@ -274,7 +274,7 @@ smd(
   },
   async (m) => {
     try {
-      let apiUrl = "https://api.maher-zubair.tech/nsfw/blowjob";
+      let apiUrl = "https://shizoapi.onrender.com/api/sfw/milf?apikey=${shizokeys}";
       let response = await fetch(apiUrl);
       let jsonResponse = await response.json();
 
@@ -301,7 +301,7 @@ smd(
   },
   async (m) => {
     try {
-      let apiUrl = "https://api.maher-zubair.tech/nsfw/bdsm";
+      let apiUrl = "https://shizoapi.onrender.com/api/nsfw/glasses?apikey=${shizokeys}";
       let response = await fetch(apiUrl);
       let jsonResponse = await response.json();
 
@@ -328,7 +328,7 @@ smd(
   },
   async (m) => {
     try {
-      let apiUrl = "https://api.maher-zubair.tech/nsfw/fuck";
+      let apiUrl = "https://shizoapi.onrender.com/api/nsfw/jahy?apikey=${shizokeys}";
       let response = await fetch(apiUrl);
       let jsonResponse = await response.json();
 
@@ -355,7 +355,7 @@ smd(
   },
   async (m) => {
     try {
-      let apiUrl = "https://api.maher-zubair.tech/nsfw/fingering";
+      let apiUrl = "https://shizoapi.onrender.com/api/nsfw/manga?apikey=${shizokeys}";
       let response = await fetch(apiUrl);
       let jsonResponse = await response.json();
 
