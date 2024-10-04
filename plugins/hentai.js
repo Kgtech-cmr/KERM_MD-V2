@@ -72,7 +72,7 @@ smd(
       }
 
       // Construct the API URL with the provided query
-      const apiUrl = `https://shizoapi.onrender.com/api/nsfw/nai?apikey=shizo";
+      const apiUrl = "https://shizoapi.onrender.com/api/nsfw/nai?apikey=shizo";
       
       // Fetch the response from the API
       const response = await fetch(apiUrl);
