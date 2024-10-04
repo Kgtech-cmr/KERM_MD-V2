@@ -8,7 +8,7 @@ global.port = process.env.PORT;
 global.appUrl = process.env.APP_URL || "";
 global.email = "Kermd237@gmail.com";
 global.location = "Douala, Cameroun";
-global.mongodb = process.env.MONGODB_URI || "";
+global.mongodb = process.env.MONGODB_URL || "mongodb+srv://Rayan:<Emmanuel237>@cluster0.8twd0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 global.allowJids = process.env.ALLOW_JID || "null";
 global.blockJids = process.env.BLOCK_JID || "null";
 global.DATABASE_URL = process.env.DATABASE_URL || "";
@@ -27,7 +27,7 @@ global.warncount = process.env.WARN_COUNT || 3;
 global.disablepm = process.env.DISABLE_PM || "false";
 global.disablegroup = process.env.DISABLE_GROUPS || "false",
 global.MsgsInLog = process.env.MSGS_IN_LOG || "false";
-global.userImages = process.env.USER_IMAGES || "https://telegra.ph/file/40ffc2a288542560c887c.jpg";
+global.userImages = process.env.USER_IMAGES || "https://files.catbox.moe/kbc224.gif,https://files.catbox.moe/dhii42.gif,https://files.catbox.moe/lgj91g.gif,https://files.catbox.moe/hvjoe6.gif,https://files.catbox.moe/4ogeum.gif,https://files.catbox.moe/0cmaxl.jpg";
 global.waPresence = process.env.WAPRESENCE || "available";
 global.readcmds = process.env.READ_COMMAND || "true";
 global.readmessage = process.env.READ_MESSAGE || "false";
