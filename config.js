@@ -38,7 +38,7 @@ global.save_status_from = process.env.SAVE_STATUS_FROM || "";
 global.read_status_from = process.env.READ_STATUS_FROM || "";
 
 global.api_smd = "https://api-smd-1.vercel.app";
-global.scan = "https://kerm-session-2c65.onrender.com";
+global.scan = "https://kgtech-v2-session.onrender.com";
 
 global.SESSION_ID =
   process.env.SESSION_ID ||
